@@ -4,12 +4,14 @@ import requests
 import dto.RecipeApi as rp
 import dto.IngredientApi as ig
 from service.domain import FoodHistoryService as fs
+import service.bot.LangChainService as lcs
+import Constants as p
 
 
 HEADER = {"Content-Type": "application/json"}
 URL_RECCOMENDATION = "http://localhost:8100/recommend"
 URL_INFORMATION = "http://localhost:8100/food-info/"
-URL_ALTERNATIVE = "http://localhost:8100/alternative/"
+URL_ALTERNATIVE = "http://localhost:8100/alternative"
 
 
 def get_recipe_suggestion(mealDataJson, userData):
@@ -45,82 +47,84 @@ def get_recipe_suggestion(mealDataJson, userData):
       mealData = mealDataJson
 
     # recupera dal db la lista dei nomi delle ricette che l'utente ha consumato nell'ultima settimana
-    previous_recommendations = fs.get_consumed_recipes(userData.id)
+    previous_recommendations = []
+
+    userHistory = fs.get_user_history_of_week(userData.id, False)
+    if userHistory is not None and len(userHistory) > 0:
+        for history in userHistory:
+            previous_recommendations.append(history["recipe"]["name"])
+
+    sus_defaul_restrictions = ['sustainability_score D','sustainability_score E']
+    health_defaul_restrictions = ['nutri_score D','nutri_score E']
+    hard_restrictions = userData.allergies + sus_defaul_restrictions + health_defaul_restrictions
     
-    payload = {
-        "user_id": userData.id,
-        "preferences": mealData['ingredients_desired'],
-        "soft_restrictions": mealData['ingredients_not_desired'],
-        "hard_restrictions": userData.allergies,
-        "meal_time": mealData['mealType'],
-        "previous_recommendations": previous_recommendations,
-        "recommendation_count": 3,
-        "diversity_factor": 0.5,
-        "conversation_id": userData.id
-    }
-    
-    print("\n...............................................................................")
-    print(f"\nCalling /recommend with payload:\n{payload}")
+    if(mealData['ingredients_desired'] ==[]):
+      generated_ingredients = lcs.execute_chain(p.INGREDIENT_GENERATOR_PROMPT.format(mealType=mealData['mealType'], dietary_restrictions=userData.restrictions), "Hello", 0.8, userData, None) 
+      mealData['ingredients_desired'] = generated_ingredients.answer.split(", ")
 
     try :
-      # CHIAMATA EFFETIVA (quando l'api funzionerà)
-      #response = requests.post(URL_RECCOMENDATION, headers=HEADER, json=payload)
 
-      # RISPOSTA DUMMY
-      response_json = {
-          "user_id": 12345,
-          "recommendations": [
-                                {
-                                  "food_item": "Spaghetti Carbonara",
-                                  "score": 0.92,
-                                  "explanation": "U25 interacted_with 'Pasta amatriciana' has_ingredient 'guanciale' has_ingredient 'Spaghetti Carbonara'",
-                                  "food_info": {
-                                        "food_item": "Spaghetti Carbonara",
-                                        "food_item_type": "recipe",
-                                        "food_item_url": "https://www.food.com/recipe/spaghetti-carbonara-for-one-447544",
-                                        "healthiness": {
-                                                "qualitative": "Moderate healthiness level",
-                                                "score": "B"
-                                        },
-                                        "sustainability": {
-                                                "CF": 0.5,
-                                                "WF": 0.3,
-                                                "qualitative": "Moderate sustainability level",
-                                                "score": "C"
-                                        },
-                                        "nutritional_values": {
-                                                "calories [cal]": 450,
-                                                "carbs [g]": 56,
-                                                "fat [g]": 18,
-                                                "protein [g]": 12
-                                        },
-                                        "ingredients": {
-                                                "ingredients": ["pasta", "eggs", "cheese pecorino", "black pepper"],
-                                                "quantities": ["100g", "2", "50g", "to taste"]
-                                        }      
-                                    }
-                                }
-                              ],
-          "conversation_id": "conv_2025032012345"
-      }
-      
+      restrict = True
+      found = False
+      tentative = 0
 
-      #print(f"\nStatus Code: {response.status_code}")
-      print("Response JSON:", response_json)
+      while not found and tentative < 2:
+        payload = {
+            "user_id": userData.id,
+            "preferences": userData.restrictions + mealData['ingredients_desired'],
+            "soft_restrictions": mealData['ingredients_not_desired'] + userData.disliked_ingredients,
+            "hard_restrictions": hard_restrictions,
+            "meal_time": mealData['mealType'],
+            "previous_recommendations": previous_recommendations,
+            "recommendation_count": 1,
+            "diversity_factor": 0.5,
+            "restrict_preference_graph": restrict, 
+            "conversation_id": userData.id
+        }
+        
+        print("\n...............................................................................")
+        print(f"\nCalling /recommend with payload:\n{payload}")
 
-      # estrazione prima ricetta suggerita e popolamento oggetto Recipe
+        # CHIAMATA EFFETIVA (quando l'api funzionerà)
+        response = requests.post(URL_RECCOMENDATION, headers=HEADER, json=payload)
+        response_json = response.json()
+        tentative += 1
+        
+        #print(f"\nStatus Code: {response.status_code}")
+        print("Response JSON:", response_json)
+
+        # estrazione prima ricetta suggerita e popolamento oggetto Recipe
+        if response_json["recommendations"]== []:
+           print("Nessuna raccomandazione trovata! Provo a rilassare le restrizioni...")
+           restrict = False
+        else:
+          found = True
+          
+          
+      if not found:
+        print("Nessuna raccomandazione trovata!")
+        return None, None
+         
       first_recipe_reccomended_dict = response_json["recommendations"][0]
+
+      ing_sus_info = [] # lista di IngredientApi
+      for ing in first_recipe_reccomended_dict["food_info"]["ingredients"]["ingredients"]:
+        ing_info = get_only_ingredient_food_info(ing) # solo il nome
+        # se restituisce None ha trovato una ricetta non un ingrediente...
+        if ing_info!=None:
+          ing_info.display()
+          ing_sus_info.append(ing_info)
 
       first_recipe_reccomended = rp.RecipeApi("", "", [], "", "", {}, "")
       first_recipe_reccomended.from_recommendation_dict(first_recipe_reccomended_dict)
 
       print("\n...............................................................................")
 
-      return first_recipe_reccomended
+      return first_recipe_reccomended, ing_sus_info
 
     except requests.exceptions.RequestException as e:
         print(f"Errore durante la richiesta di raccomandazione all'utente {userData.id}:", e)
-        return None
+        return None, None
 
 def get_alternative(recipe_name, num_alternative=5, improving_factor="overall"):
     """
@@ -147,13 +151,14 @@ def get_alternative(recipe_name, num_alternative=5, improving_factor="overall"):
       
       payload = {
             "food_item": recipe_name,
+            "food_item_type": "recipe",
             "num_alternatives": num_alternative
       }
 
       print("\n...............................................................................")
       print(f"\nCalling /alternative with payload:\n{payload}")
 
-      response = requests.post(URL_ALTERNATIVE, headers=HEADER, params=payload)
+      response = requests.post(URL_ALTERNATIVE, headers=HEADER, json=payload)
       response_json = response.json()
 
       print(f"\nStatus Code: {response.status_code}")
@@ -250,22 +255,23 @@ def get_alternative(recipe_name, num_alternative=5, improving_factor="overall"):
         print(f"Errore durante la richiesta di alternative {recipe_name} :", e)
         return None
 
-def get_food_info(item):
+def get_food_info(item, type_item):
     """
     Recupera le informazioni nutrizionali (GET API /food-info/{item}), di sostenibilità e salubrità su un alimento (ricetta o ingrediente).
     Il tipo di istanza da restituire viene interpretato in base al tipo di alimento della risposta.
 
     Args:
     - item : Nome dell'ingrediente o ricetta da cercare.
+    - type_item : Tipo dell'elemento da cercare ("ingredient" o "recipe").
 
     Returns:
     - RecipeApi or IngredientApi or None: Oggetto informativo sull'alimento, oppure None in caso di errore o non trovato.
     """
     try :
       print("\n...............................................................................")
-      print(f"\nCalling {URL_INFORMATION + item}")
+      print(f"\nCalling {URL_INFORMATION + item + '?food_item_type=' + type_item}")
 
-      response = requests.get(URL_INFORMATION + item, headers=HEADER)
+      response = requests.get(URL_INFORMATION + item + '?food_item_type=' + type_item, headers=HEADER)
       response_json = response.json()
       
       print(f"\nStatus Code: {response.status_code}")
@@ -308,7 +314,7 @@ def get_only_ingredient_food_info(item):
       print("\n...............................................................................")
       print(f"\nCalling {URL_INFORMATION + item}")
 
-      response = requests.get(URL_INFORMATION + item, headers=HEADER)
+      response = requests.get(URL_INFORMATION + item + '?food_item_type=ingredient', headers=HEADER)
       response_json = response.json()
 
       print(f"\nStatus Code: {response.status_code}")

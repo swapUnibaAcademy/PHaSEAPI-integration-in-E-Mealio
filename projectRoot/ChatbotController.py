@@ -282,8 +282,10 @@ def answer_question(userData,userPrompt,token,memory,info):
         # traduciamo le informazioni sul suggerimento
         translated_info = lcs.translate_info(info, language)
 
-        temp_suggestedRecipe = food.get_recipe_suggestion(translated_info,userData)
+        #temp_suggestedRecipe = food.get_recipe_suggestion(translated_info,userData)
+        temp_suggestedRecipe, temp_ing_sus_info = api.get_recipe_suggestion(translated_info,userData)
         suggestedRecipe = utils.adapt_output_to_bot(temp_suggestedRecipe)
+        ing_sus_info = utils.adapt_output_to_bot(temp_ing_sus_info)
         translated_info = utils.escape_curly_braces(translated_info)
         userDataStr = utils.escape_curly_braces(userData.to_json())
 
@@ -292,15 +294,17 @@ def answer_question(userData,userPrompt,token,memory,info):
         if(suggestedRecipe != 'null'):
 
             # recuperiamo le informazioni sulla ricetta da suggerire
-            nutritional_facts = rcpService.get_nutritional_facts_by_id(int(temp_suggestedRecipe.id))
-            nutritional_facts = utils.escape_curly_braces(str(nutritional_facts))
-            who_score = temp_suggestedRecipe.who_score
+            #nutritional_facts = rcpService.get_nutritional_facts_by_id(int(temp_suggestedRecipe.id))
+            #nutritional_facts = utils.escape_curly_braces(str(nutritional_facts))
+            #who_score = temp_suggestedRecipe.who_score
+            nutritional_facts = utils.escape_curly_braces(str(temp_suggestedRecipe.nutritional_values))
+            who_score = temp_suggestedRecipe.healthiness.score
 
             allergies = user.get_allergies(userData.id)
             restrictions = user.get_restrictions(userData.id)
             evolving_diet = user.get_evolving_diet(userData.id)
             
-            response = lcs.execute_chain(p.TASK_2_10_PROMPT.format(suggestedRecipe=suggestedRecipe, mealInfo=translated_info, userData=userDataStr, language = language, allergies=allergies, restrictions=restrictions, evolving_diet=evolving_diet, nutritional_facts=nutritional_facts, who_score=who_score), userPrompt, 0.6, userData, memory, True)
+            response = lcs.execute_chain(p.TASK_2_10_PROMPT.format(suggestedRecipe=suggestedRecipe, mealInfo=translated_info, userData=userDataStr, language = language, allergies=allergies, restrictions=restrictions, evolving_diet=evolving_diet, nutritional_facts=nutritional_facts, who_score=who_score, ing_sus_info=ing_sus_info), userPrompt, 0.6, userData, memory, True)
         else:
             response = lcs.execute_chain(p.TASK_2_10_1_PROMPT.format(mealInfo=translated_info, userData=userDataStr, language = language), userPrompt, 0.6, userData, memory, False)        
         
@@ -312,7 +316,6 @@ def answer_question(userData,userPrompt,token,memory,info):
         return response
     
     elif(token == p.TASK_2_25_HOOK):
-
         log.save_log("SUGGESTION_SWAP_INGREDIENT", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
 
         originalPrompt = utils.de_escape_curly_braces(memory.messages[0].content)    
@@ -328,7 +331,7 @@ def answer_question(userData,userPrompt,token,memory,info):
     
     elif(token == p.TASK_2_30_HOOK):
         log.save_log("SUGGESTION_ACCEPTED", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
-        manage_suggestion(userData,memory,"accepted")
+        manage_suggestion_api(userData,memory,"accepted")
         fhService.clean_temporary_declined_suggestions(userData.id)
         answer = lcs.translate_text(p.SUGGESTION_ACCEPTED, language)
         response = rc.Response(answer,"TOKEN 1",'',None,p.USER_GREETINGS_PHRASE)
@@ -336,7 +339,7 @@ def answer_question(userData,userPrompt,token,memory,info):
     
     elif(token == p.TASK_2_40_HOOK):
         log.save_log("SUGGESTION_DECLINED", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
-        manage_suggestion(userData,memory,"declined")
+        manage_suggestion_api(userData,memory,"declined")
         fhService.clean_temporary_declined_suggestions(userData.id)
         answer = lcs.translate_text(p.SUGGESTION_DECLINED, language)
         response = rc.Response(answer,"TOKEN 1",'',None,p.USER_GREETINGS_PHRASE)
@@ -344,9 +347,9 @@ def answer_question(userData,userPrompt,token,memory,info):
     
     elif(token == p.TASK_2_50_HOOK):
         log.save_log("REQUIRED_ANOTHER_SUGGESTION", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
-        manage_suggestion(userData,memory,"temporary_declined")
+        manage_suggestion_api(userData,memory,"temporary_declined")
         originalUserPrompt = memory.messages[1].content
-        response = rc.Response('',"TOKEN 1",'',None,originalUserPrompt)
+        response = rc.Response('',"TOKEN 2.05",info,memory,'')
         return response
     
 ########################################################################################
@@ -539,7 +542,13 @@ def answer_question(userData,userPrompt,token,memory,info):
         item_data = jsonpickle.decode(info)
 
         # caso di un singolo ingrediente/ricetta forza il valore a lista se è una stringa
-        ingredient_list = item_data['item']
+        
+        type_item = item_data['task']
+
+        if type_item == 'ingredient':
+            ingredient_list = item_data['ingredients']
+        elif type_item == 'recipe':
+            ingredient_list = item_data['recipeNames']
 
         if isinstance(ingredient_list, str):
             ingredient_list = [ingredient_list]
@@ -548,7 +557,7 @@ def answer_question(userData,userPrompt,token,memory,info):
         items_food_info = []
 
         for item in translated_item:
-            item_food_info = api.get_food_info(item)
+            item_food_info = api.get_food_info(item, type_item)
             if item_food_info is not None:
                 item_food_info.display()
                 items_food_info.append(utils.adapt_output_to_bot(item_food_info))

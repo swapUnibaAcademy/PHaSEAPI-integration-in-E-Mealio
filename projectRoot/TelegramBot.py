@@ -91,7 +91,7 @@ def build_menu_buttons(language: str = "en"):
         [InlineKeyboardButton("🛠️ " + labels["recipe_improvement"], callback_data="Recipe Improvement")],
         [InlineKeyboardButton("🌱 " + labels["food_expert"], callback_data="Food Expert")],
         [InlineKeyboardButton("👤 " + labels["profile"], callback_data="User Profile Recap and Update")],
-        [InlineKeyboardButton("🥘 " + labels["diary"], callback_data="Food Diary")],
+        #[InlineKeyboardButton("🥘 " + labels["diary"], callback_data="Food Diary")],
         [InlineKeyboardButton("📊 " + labels["diary_recap"], callback_data="Food Diary Recap")],
         
     ]
