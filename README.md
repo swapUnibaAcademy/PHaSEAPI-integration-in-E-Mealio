@@ -144,19 +144,3 @@ python TelegramBot.py
 
 - Send `/start` to the bot on Telegram.
 - If it replies, everything is working! 🎉
-
----
-
-### 5. Run Unit Tests
-
-You can verify everything is set up correctly by running:
-
-```bash
-python test.py
-```
-
-- Tests are validated with:
-  - **OpenAI GPT-4o**
-  - **Anthropic Claude Sonnet 3.5**
-- If all tests pass, the bot is ready to go.
-- If you use a different LLM, ensure it passes all tests—otherwise, the agent may not work properly.

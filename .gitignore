@@ -3,3 +3,4 @@
 *.pyc 
 dataset/datasetScripts/.env
 projectRoot/.env
+.env

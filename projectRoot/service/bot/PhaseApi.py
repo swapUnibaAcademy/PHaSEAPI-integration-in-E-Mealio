@@ -6,12 +6,14 @@ import dto.IngredientApi as ig
 from service.domain import FoodHistoryService as fs
 import service.bot.LangChainService as lcs
 import Constants as p
+import os
 
-
+phase_host = os.getenv('PHASE_HOST', 'localhost')  # fallback to localhost
+phase_port = int(os.getenv('PHASE_PORT', 8100))
 HEADER = {"Content-Type": "application/json"}
-URL_RECCOMENDATION = "http://localhost:8100/recommend"
-URL_INFORMATION = "http://localhost:8100/food-info/"
-URL_ALTERNATIVE = "http://localhost:8100/alternative"
+URL_RECCOMENDATION = f"http://{phase_host}:{phase_port}/recommend"
+URL_INFORMATION = f"http://{phase_host}:{phase_port}/food-info/"
+URL_ALTERNATIVE = f"http://{phase_host}:{phase_port}/alternative"
 
 
 def get_recipe_suggestion(mealDataJson, userData):
@@ -67,11 +69,12 @@ def get_recipe_suggestion(mealDataJson, userData):
       restrict = True
       found = False
       tentative = 0
+      desired_restriction = userData.evolving_diet
 
       while not found and tentative < 2:
         payload = {
             "user_id": userData.id,
-            "preferences": userData.restrictions + mealData['ingredients_desired'],
+            "preferences": userData.restrictions + mealData['ingredients_desired'] + desired_restriction,
             "soft_restrictions": mealData['ingredients_not_desired'] + userData.disliked_ingredients,
             "hard_restrictions": hard_restrictions,
             "meal_time": mealData['mealType'],
@@ -97,6 +100,7 @@ def get_recipe_suggestion(mealDataJson, userData):
         if response_json["recommendations"]== []:
            print("Nessuna raccomandazione trovata! Provo a rilassare le restrizioni...")
            restrict = False
+           desired_restriction = None #rilassa le restrizioni opzionali
         else:
           found = True
           

@@ -1,0 +1,47 @@
+version: "3.9"
+
+services:
+  mongo:
+    image: mongo:7
+    container_name: emealio-mongo
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongo_data:/data/db
+      - ./init.js:/docker-entrypoint-initdb.d/init.js:ro
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  phase:
+    build:
+      context: ../PHaSEAPI
+      dockerfile: Dockerfile
+    container_name: phase
+    ports:
+      - "8100:8100"  # espone porta 8100 su host
+    restart: unless-stopped
+
+  emealio-phase-bot:
+    build: .
+    container_name: emealio-phase-bot
+    depends_on:
+      mongo:
+        condition: service_healthy
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - MONGO_HOST=mongo
+      - MONGO_PORT=27017
+      - PHASE_HOST=phase
+      - PHASE_PORT=8100
+    volumes:
+      - .:/app
+    command: ["python", "-u", "projectRoot/TelegramBot.py"]
+    restart: unless-stopped
+
+volumes:
+  mongo_data:
