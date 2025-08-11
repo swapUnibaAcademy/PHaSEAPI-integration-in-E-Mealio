@@ -1,146 +1,87 @@
+# 🌱E-Mealio + PHaSE: A Chat Agent for Sustainable and Healthy Recipes Suggestions
 
-## How to Install
+A project originally developed by **Antonio Raffaele Iacovazzi** as part of his *Master’s Thesis in Computer Science*, with the goal of developing a chat-based agent that helps users adopt sustainable food habits.
 
-> Instructions below are intended for running the project locally.  
-> **Python 3** is required.
+Subsequently, **Lorenzo Blanco**, as part of his *Bachelor's Thesis in Computer Science*, further developed the chat-based agent by enhancing its functionalities, improving usability and overall user experience, and expanding its domain beyond sustainability to also address the promotion of healthy food habits.
 
-### 1. Clone the Repository
-
-Download or clone this repository into a local folder.
+This new version leverages [PHaSE](https://github.com/tail-unica/PHaSEAPI) APIs as main source of information and recommendations.
 
 ---
 
-### 2. Install the Dataset
+## 🔌 Current Status
 
-#### a. Install MongoDB
-
-- **MongoDB Community Edition**  
-  [Installation Guide](https://www.mongodb.com/docs/manual/installation/)
-
-- **MongoDB Compass** (a handy frontend GUI)  
-  [Compass Download](https://www.mongodb.com/it-it/products/tools/compass)
-
-#### b. Import the Dataset
-
-1. Extract `emealio_food_db.zip` to a location of your choice.
-2. Open **MongoDB Compass**.
-3. Create a new database and name it:  
-   ➤ `emealio_food_db`
-4. Create a collection inside it called:  
-   ➤ `ingredients`
-5. Import data:
-   - Click on the collection, then use the **"Add Data"** > **"Import JSON"** function to import `emealio_food_db.ingredients.json`.
-6. Repeat the process for the remaining `.json` files:
-   - For example, `emealio_food_db.recipes.json` should be imported into a collection named `recipes`.
-   - **Make sure each collection is named exactly like the corresponding file (without the `.json` extension).**
+**✅ Bot Status: ONLINE**  
+The Telegram bot is currently **active and operational**. You can interact with it searching **@emealio_phase_bot** on Telegam and typing the `/start` command.
 
 ---
+## 🐳 How to Run it with Docker
 
-### 3. Compute Embeddings
+You can easily run E-Mealio + PHaSE fully containerized with Docker and Docker Compose — no manual setup required.
 
-> The dataset does not include embeddings due to their size (~3GB).  
-> Follow these steps to generate them locally.
+### ✅ Prerequisites
 
-#### a. Required Libraries
+- [Docker](https://www.docker.com/products/docker-desktop/)
+- [Docker Compose](https://docs.docker.com/compose/)
+- [PHaSE API](https://github.com/tail-unica/PHaSEAPI)
+### 📁 Project Structure (Relevant Files)
 
-Make sure the following Python libraries are installed:
-
-```bash
-pip install pandas numpy pymongo sentence_transformers
+```
+PHaSEAPI/
+└── ...
+PHaSEAPI-integration-in-E-Mealio/
+├── docker-compose.yml
+├── Dockerfile
+├── mongo_dump/                  # Precomputed MongoDB dump (BSON format), WARNING: the actual files are not in the folder, check the readme inside to understand how to download them. 
+├── .env                         # Contains API keys
+└── projectRoot/                 # Main bot code
 ```
 
-#### b. Generate Embeddings
-
-Run the script:
-
-```bash
-python datasetUtilities/compute_embeddings.py
-```
-
-- This process takes around **1.5 hours**.
-- Progress is shown every 100 items with a message like:  
-  `Done N`
-
+IMPORTANT: PHaSEAPI and PHaSEAPI-integration-in-E-Mealio (the current project) must lay in the same folder.
 ---
 
-### 4. Install and Run the Agent
+### 🔑 1. Set Environment Variables
 
-The core agent code is located in the `projectRoot` folder.
-
-#### a. Install Dependencies
-
-Use `pip` to install required libraries:
-
-```bash
-pip install -r requirements.txt
-```
-
-#### b. Set Up the Telegram Bot
-
-1. Create a new bot using **[BotFather](https://core.telegram.org/bots/features#creating-a-new-bot)** on Telegram.  
-   (Or contact me at **ar.iacovazzi@gmail.com** to gain access to the existing bot.)
-
-2. Create a `.env` file in the `projectRoot` folder with the following contents:
+Create a `.env` file in the root (same directory as `docker-compose.yml`) with:
 
 ```env
-OPENAI_API_KEY=
-TELEGRAM_BOT_TOKEN=
-ANTHROPIC_API_KEY=
+OPENAI_API_KEY=your_openai_key
+TELEGRAM_BOT_TOKEN=your_telegram_bot_token
+ANTHROPIC_API_KEY=your_anthropic_key
 ```
 
-- Add your corresponding API keys.  
-- You can provide just one (OpenAI or Anthropic), or none if you plan to configure a different LLM via LangChain.
+> You can leave some variables blank if you're not using a specific provider.
 
+---
 
-### c. ⚠️ Start the PHaSE-API Service
-Required for the agent to provide food recommendations.
-Must be running before launching the bot.
+### 🚀 2. Build and Launch the Containers
 
-####  Run with Docker (recommended)
-```bash
-git clone https://github.com/yourusername/PhaseAPI.git
-cd PhaseAPI
-docker build -t phase-api:latest .
-```
-#### Build the Docker Image
-```bash
-docker run -p 8100:8100 phase-api:latest
-```
-The API will be available at:
-➤ http://localhost:8100
-
-##### API Documentation
-
-Once the service is running, you can access the API documentation at:
-
-- Swagger UI: [http://localhost:8100/docs](http://localhost:8100/docs)
-- ReDoc: [http://localhost:8100/redoc](http://localhost:8100/redoc)
-- OpenAPI Schema: [http://localhost:8100/openapi.json](http://localhost:8100/openapi.json)
-
-####   Local Development (without Docker)
-
-Requires [uv](https://docs.astral.sh/uv/getting-started/installation/)
+From the root of the project, run:
 
 ```bash
-# Install dependencies using uv, automatically creating a virtual environment
-uv sync
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Run the application
-uv run uvicorn src.app.main:app --reload --host 0.0.0.0 --port 8100
+docker-compose up --build
 ```
 
+This will:
 
+- Start a MongoDB container
+- Automatically restore the precomputed database from `/mongo_dump`
+- Launch the Telegram bot
 
+---
 
+### 🧪 3. Verify It’s Working
 
-#### d. Run the Bot
+- Open your Telegram bot and send `/start`
+- You should receive a response from the bot within a few seconds 🎉
 
-Launch the agent:
+---
+
+### 💾 MongoDB Persistence
+
+MongoDB data is stored in a Docker-managed volume named `mongo_data`.
+
+To **completely reset** the environment (including clearing the database), run:
 
 ```bash
-python TelegramBot.py
+docker-compose down -v
 ```
-
-- Send `/start` to the bot on Telegram.
-- If it replies, everything is working! 🎉
