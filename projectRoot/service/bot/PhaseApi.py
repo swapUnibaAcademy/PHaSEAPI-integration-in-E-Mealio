@@ -100,7 +100,7 @@ def get_recipe_suggestion(mealDataJson, userData):
         if response_json["recommendations"]== []:
            print("Nessuna raccomandazione trovata! Provo a rilassare le restrizioni...")
            restrict = False
-           desired_restriction = None #rilassa le restrizioni opzionali
+           desired_restriction = [] #rilassa le restrizioni opzionali
         else:
           found = True
           
