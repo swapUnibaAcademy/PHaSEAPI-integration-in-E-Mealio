@@ -7,7 +7,7 @@ services:
     ports:
       - "27019:27017"
     volumes:
-      - mongo_data:/data/db
+      - mongo_data_phase:/data/db
       - ./init.js:/docker-entrypoint-initdb.d/init.js:ro
     healthcheck:
       test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
@@ -51,4 +51,4 @@ services:
     restart: unless-stopped
 
 volumes:
-  mongo_data:
+  mongo_data_phase:
