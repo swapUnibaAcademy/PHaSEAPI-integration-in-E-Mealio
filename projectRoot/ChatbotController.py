@@ -14,7 +14,6 @@ import service.domain.RecipeService as rcpService
 import service.SuggestRecipeService as food
 import service.ImproveRecipeService as imp
 import service.ExpertRecipeService as er
-import service.asyncr.ComputeMonthlyUserTasteService as taste
 import jsonpickle
 import json
 import datetime
@@ -148,7 +147,6 @@ def answer_question(userData,userPrompt,token,memory,info):
         #persist user data calling MongoDB...
         response = lcs.execute_chain(p.GET_DATA_PROMPT_BASE_0_3.format(language=language), "User data: " + userData.to_json(), 0.4, userData)
         userData.reminder = False
-        userData.tastes = taste.return_empty_tastes()
         user.save_user(userData)
         return response
     

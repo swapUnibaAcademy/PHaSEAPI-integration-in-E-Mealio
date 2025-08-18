@@ -56,14 +56,26 @@ def get_recipe_suggestion(mealDataJson, userData):
         for history in userHistory:
             previous_recommendations.append(history["recipe"]["name"])
 
-    sus_defaul_restrictions = ['sustainability_score D','sustainability_score E']
-    health_defaul_restrictions = ['nutri_score D','nutri_score E']
-    hard_restrictions = userData.allergies + sus_defaul_restrictions + health_defaul_restrictions
+    sus_default_restrictions = ['sustainability_score D','sustainability_score E']
+    health_default_restrictions = ['nutri_score D','nutri_score E']
+    
     
     if(mealData['ingredients_desired'] ==[]):
       generated_ingredients = lcs.execute_chain(p.INGREDIENT_GENERATOR_PROMPT.format(mealType=mealData['mealType'], dietary_restrictions=userData.restrictions), "Hello", 0.8, userData, None) 
       mealData['ingredients_desired'] = generated_ingredients.answer.split(", ")
 
+    cookingTime = []
+    if(mealData['cookingTime'] != None and mealData['cookingTime'] != ''):
+      if(mealData['cookingTime'] == 'medium'):
+       cookingTime = ['30-minutes']
+      elif(mealData['cookingTime'] == 'short'):  
+       cookingTime = ['15-minutes']  
+
+    if(mealData['healthiness'] == 'yes'):
+       health_default_restrictions = ['nutri_score C','nutri_score D','nutri_score E']
+
+    hard_restrictions = userData.allergies + sus_default_restrictions + health_default_restrictions
+       
     try :
 
       restrict = True
@@ -74,7 +86,7 @@ def get_recipe_suggestion(mealDataJson, userData):
       while not found and tentative < 2:
         payload = {
             "user_id": userData.id,
-            "preferences": userData.restrictions + mealData['ingredients_desired'] + desired_restriction,
+            "preferences": userData.restrictions + mealData['ingredients_desired'] + desired_restriction + cookingTime,
             "soft_restrictions": mealData['ingredients_not_desired'] + userData.disliked_ingredients,
             "hard_restrictions": hard_restrictions,
             "meal_time": mealData['mealType'],
@@ -100,7 +112,11 @@ def get_recipe_suggestion(mealDataJson, userData):
         if response_json["recommendations"]== []:
            print("Nessuna raccomandazione trovata! Provo a rilassare le restrizioni...")
            restrict = False
-           desired_restriction = [] #rilassa le restrizioni opzionali
+           #rilassa le restrizioni opzionali
+           cookingTime = []
+           desired_restriction = [] 
+           health_default_restrictions = ['nutri_score D','nutri_score E']
+           hard_restrictions = userData.allergies + sus_default_restrictions + health_default_restrictions
         else:
           found = True
           
@@ -113,7 +129,7 @@ def get_recipe_suggestion(mealDataJson, userData):
 
       ing_sus_info = [] # lista di IngredientApi
       for ing in first_recipe_reccomended_dict["food_info"]["ingredients"]["ingredients"]:
-        ing_info = get_only_ingredient_food_info(ing) # solo il nome
+        ing_info = get_food_info(ing,'ingredient') # solo il nome
         # se restituisce None ha trovato una ricetta non un ingrediente...
         if ing_info!=None:
           ing_info.display()
@@ -233,7 +249,7 @@ def get_alternative(recipe_name, num_alternative=5, improving_factor="overall"):
       print("base ingredients : ",base_recipe.ingredients)
 
       for ing in base_recipe.ingredients:
-        ing_info = get_only_ingredient_food_info(ing[0]) # solo il nome
+        ing_info = get_food_info(ing[0],'ingredient') # solo il nome
         # se restituisce None ha trovato una ricetta non un ingrediente...
         if ing_info!=None:
           ing_info.display()
@@ -243,7 +259,7 @@ def get_alternative(recipe_name, num_alternative=5, improving_factor="overall"):
       print("\nimproved ingredients : ",imp_recipe.ingredients)
 
       for ing in imp_recipe.ingredients:
-        ing_info = get_only_ingredient_food_info(ing[0]) # solo il nome
+        ing_info = get_food_info(ing[0],'ingredient') # solo il nome
         # se restituisce None ha trovato una ricetta non un ingrediente...
         if ing_info!=None:
           ing_info.display()
@@ -302,44 +318,3 @@ def get_food_info(item, type_item):
     except requests.exceptions.RequestException as e:
         print(f"Errore durante la richiesta di recupero informazioni {item} :", e)
         return None
-   
-def get_only_ingredient_food_info(item):
-   """
-    Recupera informazioni solo se l'item richiesto è un ingrediente (e non una ricetta).
-    Utile a filtrare solo ingredienti dal database alimentare.
-
-    Args:
-    - item : Nome dell'ingrediente da cercare.
-
-    Returns:
-    - IngredientApi or None: Oggetto IngredientApi se trovato, oppure None in caso di errore o non trovato.
-    """
-   try :
-      print("\n...............................................................................")
-      print(f"\nCalling {URL_INFORMATION + item}")
-
-      response = requests.get(URL_INFORMATION + item + '?food_item_type=ingredient', headers=HEADER)
-      response_json = response.json()
-
-      print(f"\nStatus Code: {response.status_code}")
-      if response.status_code==404:
-         print("Non trovato!")
-         return None
-
-      print("Response JSON:", response_json)
-      
-      # l'endpoint è lo stesso per ricette e ingredienti, ma cambia il campo food_item_type della riposta
-      if response_json["food_item_type"]=="ingredient":
-          ingredient_information = ig.IngredientApi("", [], None, None, {}, "")
-          ingredient_information.from_food_info_dict(response_json)
-          print("\n...............................................................................")
-          return ingredient_information
-
-      else:
-          # ha trovato una ricetta...
-          return None
-        
-   except requests.exceptions.RequestException as e:
-        print(f"Errore durante la richiesta di recupero informazioni {item} :", e)
-        return None
-   

@@ -1,48 +1,10 @@
-2025-08-09 15:15:34,723 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
-2025-08-09 15:15:34,724 - apscheduler.scheduler - INFO - Added job "main.<locals>.<lambda>" to job store "default"
-2025-08-09 15:15:34,724 - apscheduler.scheduler - INFO - Scheduler started
-2025-08-09 15:15:35,126 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getMe "HTTP/1.1 200 OK"
-2025-08-09 15:15:35,247 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/deleteWebhook "HTTP/1.1 200 OK"
-2025-08-09 15:15:35,250 - apscheduler.scheduler - INFO - Scheduler started
-2025-08-09 15:15:35,250 - telegram.ext.Application - INFO - Application started
-2025-08-09 15:15:45,496 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:15:55,663 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:16:05,815 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:16:15,935 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:16:26,021 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:16:36,081 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:16:46,214 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:16:56,290 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:17:06,398 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:17:16,526 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:17:26,717 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:17:36,864 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:17:46,986 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:17:57,055 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:18:07,159 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:18:17,224 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:18:27,357 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:18:37,551 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:18:47,706 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:18:57,802 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:19:07,923 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:19:18,006 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:19:28,068 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:19:38,186 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:19:48,243 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:19:58,348 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:20:08,429 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:20:18,558 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:20:28,672 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:20:38,790 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:20:48,851 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:20:58,952 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:21:09,109 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:21:19,197 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:21:29,317 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:21:39,472 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:21:47,065 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:21:47,511 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendChatAction "HTTP/1.1 200 OK"
+2025-08-18 11:45:27,612 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-18 11:45:28,079 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getMe "HTTP/1.1 200 OK"
+2025-08-18 11:45:28,152 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-18 11:45:28,154 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-18 11:45:28,155 - telegram.ext.Application - INFO - Application started
+2025-08-18 11:45:28,739 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
+2025-08-18 11:45:28,968 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendChatAction "HTTP/1.1 200 OK"
 
 ####################################################################################################
 Debug (ChatBotController -> answer_router)
@@ -54,7 +16,7 @@ answer_router ---- > answer_question
 Debug (ChatBotController -> answer_question)
 
 userData : 
- <dto.User.User object at 0x7f2a34019a50>
+ <dto.User.User object at 0x000002B36C546810>
 
 userPrompt : 
  Hi!
@@ -68,7 +30,909 @@ memory :
 info : 
  None
 GRETINGS
-2025-08-09 15:21:52,075 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-18 11:45:34,309 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+
+
+answer: 
+ TOKEN 1
+Ciao! 
+
+Sono E-Mealio, il tuo assistente personale per l'alimentazione sostenibile e salutare! Posso aiutarti a scegliere cibi eco-sostenibili e darti consigli su come migliorare le tue ricette dal punto di vista ambientale.
+
+Puoi selezionare una delle funzionalità dai pulsanti del menu per ricevere una spiegazione dettagliata su come utilizzarla. Ricorda che puoi sempre tornare al menu principale usando il comando /start.
+
+Lo sapevi questa? Qual è il cibo preferito di un matematico? La Pi-zza! 😄
+
+action from get_token(answer):  TOKEN 1
+
+info from get_info(answer): 
+  
+
+answer from clean_answer_from_token_and_info(answer, info): 
+ Ciao! 
+
+Sono E-Mealio, il tuo assistente personale per l'alimentazione sostenibile e salutare! Posso aiutarti a scegliere cibi eco-sostenibili e darti consigli su come migliorare le tue ricette dal punto di vista ambientale.
+
+Puoi selezionare una delle funzionalità dai pulsanti del menu per ricevere una spiegazione dettagliata su come utilizzarla. Ricorda che puoi sempre tornare al menu principale usando il comando /start.
+
+Lo sapevi questa? Qual è il cibo preferito di un matematico? La Pi-zza! 😄
+
+response: 
+ {'answer': "Ciao! \n\nSono E-Mealio, il tuo assistente personale per l'alimentazione sostenibile e salutare! Posso aiutarti a scegliere cibi eco-sostenibili e darti consigli su come migliorare le tue ricette dal punto di vista ambientale.\n\nPuoi selezionare una delle funzionalità dai pulsanti del menu per ricevere una spiegazione dettagliata su come utilizzarla. Ricorda che puoi sempre tornare al menu principale usando il comando /start.\n\nLo sapevi questa? Qual è il cibo preferito di un matematico? La Pi-zza! 😄", 'action': 'TOKEN 1', 'info': ' ', 'memory': None, 'modifiedPrompt': ''}
+
+####  TOKEN 1  ---->>>  TOKEN 1  ####
+
+####################################################################################################
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Invio messaggio all'utente : 
+ Ciao! 
+
+Sono E-Mealio, il tuo assistente personale per l'alimentazione sostenibile e salutare! Posso aiutarti a scegliere cibi eco-sostenibili e darti consigli su come migliorare le tue ricette dal punto di vista ambientale.
+
+Puoi selezionare una delle funzionalità dai pulsanti del menu per ricevere una spiegazione dettagliata su come utilizzarla. Ricorda che puoi sempre tornare al menu principale usando il comando /start.
+
+Lo sapevi questa? Qual è il cibo preferito di un matematico? La Pi-zza! 😄
++++++++++++++++++++++++++++++++++++++++++++++++
+
+2025-08-18 11:45:34,686 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendMessage "HTTP/1.1 200 OK"
+2025-08-18 11:45:38,832 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
+2025-08-18 11:45:48,904 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
+2025-08-18 11:45:58,582 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
+2025-08-18 11:45:58,949 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendChatAction "HTTP/1.1 200 OK"
+
+
+===================================================================================
+context.user_data['callbackMessage'] :  
+update.message.text :  vorrei qualcosa per pranzo con fagioli che sia salutare e veloce da preparare
+
+####################################################################################################
+Debug (ChatBotController -> answer_router)
+
+answer_router ---- > answer_question
+
+
+----------------------------------------------------------------------------------------------------
+Debug (ChatBotController -> answer_question)
+
+userData : 
+ <dto.User.User object at 0x000002B36C546810>
+
+userPrompt : 
+ vorrei qualcosa per pranzo con fagioli che sia salutare e veloce da preparare
+
+token : 
+ TOKEN 1
+
+memory : 
+ None
+
+info : 
+  
+GRETINGS
+2025-08-18 11:46:00,335 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+
+
+answer: 
+ TOKEN 2
+
+action from get_token(answer):  TOKEN 2
+
+info from get_info(answer): 
+  
+
+answer from clean_answer_from_token_and_info(answer, info): 
+ 
+
+response: 
+ {'answer': '', 'action': 'TOKEN 2', 'info': ' ', 'memory': None, 'modifiedPrompt': ''}
+
+####  TOKEN 1  ---->>>  TOKEN 2  ####
+
+answer_router ---- > answer_question
+
+
+----------------------------------------------------------------------------------------------------
+Debug (ChatBotController -> answer_question)
+
+userData : 
+ <dto.User.User object at 0x000002B36C546810>
+
+userPrompt : 
+ vorrei qualcosa per pranzo con fagioli che sia salutare e veloce da preparare
+
+token : 
+ TOKEN 2
+
+memory : 
+ None
+
+info : 
+  
+FOOD_SUGGESTION_INTERACTION
+2025-08-18 11:46:03,759 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+
+
+answer: 
+ TOKEN 2.05
+{
+    "mealType": "Lunch",
+    "recipeName": "",
+    "sustainabilityScore": "",
+    "ingredients_desired": ["fagioli"],
+    "ingredients_not_desired": [],
+    "cookingTime": "short",
+    "healthiness": "yes"
+}
+
+action from get_token(answer):  TOKEN 2.05
+
+info from get_info(answer): 
+  {
+    "mealType": "Lunch",
+    "recipeName": "",
+    "sustainabilityScore": "",
+    "ingredients_desired": ["fagioli"],
+    "ingredients_not_desired": [],
+    "cookingTime": "short",
+    "healthiness": "yes"
+}
+
+answer from clean_answer_from_token_and_info(answer, info): 
+ 
+
+response: 
+ {'answer': '', 'action': 'TOKEN 2.05', 'info': ' {\n    "mealType": "Lunch",\n    "recipeName": "",\n    "sustainabilityScore": "",\n    "ingredients_desired": ["fagioli"],\n    "ingredients_not_desired": [],\n    "cookingTime": "short",\n    "healthiness": "yes"\n}', 'memory': None, 'modifiedPrompt': ''}
+
+####  TOKEN 2  ---->>>  TOKEN 2.05  ####
+
+answer_router ---- > answer_question
+
+
+----------------------------------------------------------------------------------------------------
+Debug (ChatBotController -> answer_question)
+
+userData : 
+ <dto.User.User object at 0x000002B36C546810>
+
+userPrompt : 
+ vorrei qualcosa per pranzo con fagioli che sia salutare e veloce da preparare
+
+token : 
+ TOKEN 2.05
+
+memory : 
+ None
+
+info : 
+  {
+    "mealType": "Lunch",
+    "recipeName": "",
+    "sustainabilityScore": "",
+    "ingredients_desired": ["fagioli"],
+    "ingredients_not_desired": [],
+    "cookingTime": "short",
+    "healthiness": "yes"
+}
+FOOD_SUGGESTION_DATA_VERIFICATION
+
+####  TOKEN 2.05  ---->>>  TOKEN 2.10  ####
+
+answer_router ---- > answer_question
+
+
+----------------------------------------------------------------------------------------------------
+Debug (ChatBotController -> answer_question)
+
+userData : 
+ <dto.User.User object at 0x000002B36C546810>
+
+userPrompt : 
+ vorrei qualcosa per pranzo con fagioli che sia salutare e veloce da preparare
+
+token : 
+ TOKEN 2.10
+
+memory : 
+ None
+
+info : 
+  {
+    "mealType": "Lunch",
+    "recipeName": "",
+    "sustainabilityScore": "",
+    "ingredients_desired": ["fagioli"],
+    "ingredients_not_desired": [],
+    "cookingTime": "short",
+    "healthiness": "yes"
+}
+PROVIDING_FOOD_SUGGESTION
+2025-08-18 11:46:05,733 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+translated_info : 
+ {
+    "mealType": "Lunch",
+    "recipeName": "",
+    "sustainabilityScore": "",
+    "ingredients_desired": ["beans"],
+    "ingredients_not_desired": [],
+    "cookingTime": "short",
+    "healthiness": "yes"
+}
+
+...............................................................................
+
+Calling /recommend with payload:
+{'user_id': '547874162', 'preferences': ['beans', '15-minutes'], 'soft_restrictions': [], 'hard_restrictions': ['sustainability_score D', 'sustainability_score E', 'nutri_score C', 'nutri_score D', 'nutri_score E'], 'meal_time': 'Lunch', 'previous_recommendations': ['Reggae Wraps'], 'recommendation_count': 1, 'diversity_factor': 0.5, 'restrict_preference_graph': True, 'conversation_id': '547874162'}
+Response JSON: {'user_id': '547874162', 'recommendations': [{'food_item': "Charmie's Won Tons Ole!", 'score': 0.5, 'explanation': "User 547874162 has_preference tag.744555.60-minutes-or-less isCompatibleWith Charmie's Won Tons Ole!", 'food_info': {'food_item': "Charmie's Won Tons Ole!", 'food_item_type': 'recipe', 'healthiness': {'score': 'B', 'qualitative': 'Good healthiness level'}, 'sustainability': {'score': 'C', 'qualitative': 'Fair sustainability level', 'CF': 9.7275, 'WF': 6939.0}, 'nutritional_values': {'protein [g]': 2.3, 'calories [cal]': 44.3, 'caloriesFromFat [cal]': 11.0, 'totalFat [g]': 1.3, 'saturatedFat [g]': 0.6, 'cholesterol [mg]': 4.9, 'sodium [mg]': 127.5, 'totalCarbohydrate [g]': 5.7, 'dietaryFiber [g]': 0.6, 'sugars [g]': 0.2}, 'nutritional_value_groups': {'calories': 'LOW', 'calories_from_fat': 'LOW', 'total_fat': 'LOW', 'saturated_fat': 'LOW', 'cholesterol': 'LOW', 'sodium': 'LOW', 'total_carbohydrate': 'LOW', 'dietary_fiber': 'LOW', 'sugars': 'LOW', 'protein': 'LOW'}, 'ingredients': {'ingredients': ['ground beef', 'envelope taco seasoning', 'salsa', 'water', 'refried beans', 'diced green chilies', 'grated monterey jack cheese', 'packages wonton wrappers', 'oil (for frying)'], 'quantities': ['1  time(s) lb ', '1 time(s) (1 1/4 ounce) ', '0.5 time(s) cup ', '1/4-1/ time(s) cup ', '1 time(s) (30 ounce) can ', '1 time(s) (4 ounce) can ', '2  time(s) cups ', '2 time(s) (16 ounce) ', ' time(s) ']}, 'food_item_url': 'https://www.food.com/recipe/charmies-won-tons-ole-124324'}}], 'conversation_id': '547874162'}
+
+...............................................................................
+
+Calling http://localhost:8100/food-info/ground beef?food_item_type=ingredient
+
+Status Code: 200
+Response JSON: {'food_item': 'ground beef', 'food_item_type': 'ingredient', 'healthiness': None, 'sustainability': {'score': 'E', 'qualitative': 'Inadequate sustainability level', 'CF': 25.75, 'WF': 15139.0}, 'nutritional_values': None, 'nutritional_value_groups': None, 'ingredients': None, 'food_item_url': None}
+
+...............................................................................
+
+------------------------------------------------------------------------------------------
+
+Name : ground beef
+
+Healthiness Score: N/A
+
+Sustainability Score: E
+  • Qualitative: Inadequate sustainability level
+  • CF: 25.75
+  • WF: 15139.0
+
+Ingredients: N/A
+
+Nutritional Values:
+
+URL : None
+------------------------------------------------------------------------------------------
+
+...............................................................................
+
+Calling http://localhost:8100/food-info/envelope taco seasoning?food_item_type=ingredient
+
+Status Code: 200
+Response JSON: {'food_item': 'taco seasoning', 'food_item_type': 'ingredient', 'healthiness': None, 'sustainability': {'score': 'A', 'qualitative': 'Excellent sustainability level', 'CF': 1.3, 'WF': 1378.0}, 'nutritional_values': None, 'nutritional_value_groups': None, 'ingredients': None, 'food_item_url': None}
+
+...............................................................................
+
+------------------------------------------------------------------------------------------
+
+Name : taco seasoning
+
+Healthiness Score: N/A
+
+Sustainability Score: A
+  • Qualitative: Excellent sustainability level
+  • CF: 1.3
+  • WF: 1378.0
+
+Ingredients: N/A
+
+Nutritional Values:
+
+URL : None
+------------------------------------------------------------------------------------------
+
+...............................................................................
+
+Calling http://localhost:8100/food-info/salsa?food_item_type=ingredient
+
+Status Code: 200
+Response JSON: {'food_item': 'salsa', 'food_item_type': 'ingredient', 'healthiness': None, 'sustainability': {'score': 'A', 'qualitative': 'Excellent sustainability level', 'CF': 1.46, 'WF': 572.0}, 'nutritional_values': None, 'nutritional_value_groups': None, 'ingredients': None, 'food_item_url': None}
+
+...............................................................................
+
+------------------------------------------------------------------------------------------
+
+Name : salsa
+
+Healthiness Score: N/A
+
+Sustainability Score: A
+  • Qualitative: Excellent sustainability level
+  • CF: 1.46
+  • WF: 572.0
+
+Ingredients: N/A
+
+Nutritional Values:
+
+URL : None
+------------------------------------------------------------------------------------------
+
+...............................................................................
+
+Calling http://localhost:8100/food-info/water?food_item_type=ingredient
+
+Status Code: 200
+Response JSON: {'food_item': 'Water', 'food_item_type': 'ingredient', 'healthiness': None, 'sustainability': None, 'nutritional_values': None, 'nutritional_value_groups': None, 'ingredients': None, 'food_item_url': None}
+
+...............................................................................
+
+------------------------------------------------------------------------------------------
+
+Name : Water
+
+Healthiness Score: N/A
+
+Sustainability Score: N/A
+
+Ingredients: N/A
+
+Nutritional Values:
+
+URL : None
+------------------------------------------------------------------------------------------
+
+...............................................................................
+
+Calling http://localhost:8100/food-info/refried beans?food_item_type=ingredient
+
+Status Code: 200
+Response JSON: {'food_item': 'can refried beans', 'food_item_type': 'ingredient', 'healthiness': None, 'sustainability': {'score': 'A', 'qualitative': 'Excellent sustainability level', 'CF': 0.78, 'WF': 555.5}, 'nutritional_values': None, 'nutritional_value_groups': None, 'ingredients': None, 'food_item_url': None}
+
+...............................................................................
+
+------------------------------------------------------------------------------------------
+
+Name : can refried beans
+
+Healthiness Score: N/A
+
+Sustainability Score: A
+  • Qualitative: Excellent sustainability level
+  • CF: 0.78
+  • WF: 555.5
+
+Ingredients: N/A
+
+Nutritional Values:
+
+URL : None
+------------------------------------------------------------------------------------------
+
+...............................................................................
+
+Calling http://localhost:8100/food-info/diced green chilies?food_item_type=ingredient
+
+Status Code: 200
+Response JSON: {'food_item': 'green diced chilies', 'food_item_type': 'ingredient', 'healthiness': None, 'sustainability': {'score': 'A', 'qualitative': 'Excellent sustainability level', 'CF': 1.48, 'WF': 807.0}, 'nutritional_values': None, 'nutritional_value_groups': None, 'ingredients': None, 'food_item_url': None}
+
+...............................................................................
+
+------------------------------------------------------------------------------------------
+
+Name : green diced chilies
+
+Healthiness Score: N/A
+
+Sustainability Score: A
+  • Qualitative: Excellent sustainability level
+  • CF: 1.48
+  • WF: 807.0
+
+Ingredients: N/A
+
+Nutritional Values:
+
+URL : None
+------------------------------------------------------------------------------------------
+
+...............................................................................
+
+Calling http://localhost:8100/food-info/grated monterey jack cheese?food_item_type=ingredient
+
+Status Code: 200
+Response JSON: {'food_item': 'monterey jack cheese', 'food_item_type': 'ingredient', 'healthiness': None, 'sustainability': {'score': 'C', 'qualitative': 'Fair sustainability level', 'CF': 9.59, 'WF': 5253.0}, 'nutritional_values': None, 'nutritional_value_groups': None, 'ingredients': None, 'food_item_url': None}
+
+...............................................................................
+
+------------------------------------------------------------------------------------------
+
+Name : monterey jack cheese
+
+Healthiness Score: N/A
+
+Sustainability Score: C
+  • Qualitative: Fair sustainability level
+  • CF: 9.59
+  • WF: 5253.0
+
+Ingredients: N/A
+
+Nutritional Values:
+
+URL : None
+------------------------------------------------------------------------------------------
+
+...............................................................................
+
+Calling http://localhost:8100/food-info/packages wonton wrappers?food_item_type=ingredient
+
+Status Code: 200
+Response JSON: {'food_item': 'wonton wrapper', 'food_item_type': 'ingredient', 'healthiness': None, 'sustainability': {'score': 'A', 'qualitative': 'Excellent sustainability level', 'CF': 0.89, 'WF': 1031.0}, 'nutritional_values': None, 'nutritional_value_groups': None, 'ingredients': None, 'food_item_url': None}
+
+...............................................................................
+
+------------------------------------------------------------------------------------------
+
+Name : wonton wrapper
+
+Healthiness Score: N/A
+
+Sustainability Score: A
+  • Qualitative: Excellent sustainability level
+  • CF: 0.89
+  • WF: 1031.0
+
+Ingredients: N/A
+
+Nutritional Values:
+
+URL : None
+------------------------------------------------------------------------------------------
+
+...............................................................................
+
+Calling http://localhost:8100/food-info/oil (for frying)?food_item_type=ingredient
+
+Status Code: 200
+Response JSON: {'food_item': 'frying oil', 'food_item_type': 'ingredient', 'healthiness': None, 'sustainability': {'score': 'C', 'qualitative': 'Fair sustainability level', 'CF': 2.11, 'WF': 6792.0}, 'nutritional_values': None, 'nutritional_value_groups': None, 'ingredients': None, 'food_item_url': None}
+
+...............................................................................
+
+------------------------------------------------------------------------------------------
+
+Name : frying oil
+
+Healthiness Score: N/A
+
+Sustainability Score: C
+  • Qualitative: Fair sustainability level
+  • CF: 2.11
+  • WF: 6792.0
+
+Ingredients: N/A
+
+Nutritional Values:
+
+URL : None
+------------------------------------------------------------------------------------------
+
+...............................................................................
+2025-08-18 11:47:43,293 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+
+
+answer: 
+ TOKEN 2.20
+Ho trovato una ricetta perfetta per il tuo pranzo: "Charmie's Won Tons Ole!". Questa ricetta include i fagioli che desideravi e può essere preparata in poco tempo.
+
+🌍 Impatto ambientale della ricetta:
+• Impronta di carbonio totale: 9.7 kg CO2 (★★★☆☆)
+• Impronta idrica: 6939 litri (★★★☆☆)
+• I fagioli rifatti e le verdure hanno un ottimo impatto ambientale
+• Il manzo e il formaggio hanno un impatto più elevato
+
+❤️ Aspetti nutrizionali:
+• Basso contenuto calorico: solo 44.3 calorie per porzione
+• Buon equilibrio di proteine (2.3g) e carboidrati (5.7g)
+• Basso contenuto di grassi (1.3g) e zuccheri (0.2g)
+• Nutri-score: ★★★★☆ (Grado B - Buona qualità nutrizionale)
+
+Per le istruzioni complete, visita: https://www.food.com/recipe/charmies-won-tons-ole-124324
+
+🤔 Ti piacerebbe provare questa ricetta? Puoi:
+1. Accettare il suggerimento
+2. Modificare i vincoli per una nuova proposta
+3. Rifiutare
+La tua risposta verrà salvata nel tuo profilo per monitorare le tue abitudini alimentari sostenibili.
+
+Per qualsiasi domanda sulla ricetta o gli ingredienti, non esitare a chiedere!
+
+action from get_token(answer):  TOKEN 2.20
+
+info from get_info(answer): 
+  
+
+answer from clean_answer_from_token_and_info(answer, info): 
+ Ho trovato una ricetta perfetta per il tuo pranzo: "Charmie's Won Tons Ole!". Questa ricetta include i fagioli che desideravi e può essere preparata in poco tempo.
+
+🌍 Impatto ambientale della ricetta:
+• Impronta di carbonio totale: 9.7 kg CO2 (★★★☆☆)
+• Impronta idrica: 6939 litri (★★★☆☆)
+• I fagioli rifatti e le verdure hanno un ottimo impatto ambientale
+• Il manzo e il formaggio hanno un impatto più elevato
+
+❤️ Aspetti nutrizionali:
+• Basso contenuto calorico: solo 44.3 calorie per porzione
+• Buon equilibrio di proteine (2.3g) e carboidrati (5.7g)
+• Basso contenuto di grassi (1.3g) e zuccheri (0.2g)
+• Nutri-score: ★★★★☆ (Grado B - Buona qualità nutrizionale)
+
+Per le istruzioni complete, visita: https://www.food.com/recipe/charmies-won-tons-ole-124324
+
+🤔 Ti piacerebbe provare questa ricetta? Puoi:
+1. Accettare il suggerimento
+2. Modificare i vincoli per una nuova proposta
+3. Rifiutare
+La tua risposta verrà salvata nel tuo profilo per monitorare le tue abitudini alimentari sostenibili.
+
+Per qualsiasi domanda sulla ricetta o gli ingredienti, non esitare a chiedere!
+
+response: 
+ {'answer': 'Ho trovato una ricetta perfetta per il tuo pranzo: "Charmie\'s Won Tons Ole!". Questa ricetta include i fagioli che desideravi e può essere preparata in poco tempo.\n\n🌍 Impatto ambientale della ricetta:\n• Impronta di carbonio totale: 9.7 kg CO2 (★★★☆☆)\n• Impronta idrica: 6939 litri (★★★☆☆)\n• I fagioli rifatti e le verdure hanno un ottimo impatto ambientale\n• Il manzo e il formaggio hanno un impatto più elevato\n\n❤️ Aspetti nutrizionali:\n• Basso contenuto calorico: solo 44.3 calorie per porzione\n• Buon equilibrio di proteine (2.3g) e carboidrati (5.7g)\n• Basso contenuto di grassi (1.3g) e zuccheri (0.2g)\n• Nutri-score: ★★★★☆ (Grado B - Buona qualità nutrizionale)\n\nPer le istruzioni complete, visita: https://www.food.com/recipe/charmies-won-tons-ole-124324\n\n🤔 Ti piacerebbe provare questa ricetta? Puoi:\n1. Accettare il suggerimento\n2. Modificare i vincoli per una nuova proposta\n3. Rifiutare\nLa tua risposta verrà salvata nel tuo profilo per monitorare le tue abitudini alimentari sostenibili.\n\nPer qualsiasi domanda sulla ricetta o gli ingredienti, non esitare a chiedere!', 'action': 'TOKEN 2.20', 'info': ' ', 'memory': InMemoryChatMessageHistory(messages=[HumanMessage(content='You are a food recommender system with the role of helping users choose environmentally sustainable and healthy foods.\nYour role is to suggest the following recipe {{"py/object": "dto.RecipeApi.RecipeApi", "name": "Charmie\'s Won Tons Ole!", "explanation": "User 547874162 has_preference tag.744555.60-minutes-or-less isCompatibleWith Charmie\'s Won Tons Ole!", "ingredients": [{{"py/tuple": ["ground beef", "1  time(s) lb "]}}, {{"py/tuple": ["envelope taco seasoning", "1 time(s) (1 1/4 ounce) "]}}, {{"py/tuple": ["salsa", "0.5 time(s) cup "]}}, {{"py/tuple": ["water", "1/4-1/ time(s) cup "]}}, {{"py/tuple": ["refried beans", "1 time(s) (30 ounce) can "]}}, {{"py/tuple": ["diced green chilies", "1 time(s) (4 ounce) can "]}}, {{"py/tuple": ["grated monterey jack cheese", "2  time(s) cups "]}}, {{"py/tuple": ["packages wonton wrappers", "2 time(s) (16 ounce) "]}}, {{"py/tuple": ["oil (for frying)", " time(s) "]}}], "healthiness": {{"py/object": "dto.SchemaApi.HealthinessInfo", "score": "B", "qualitative": "Good healthiness level"}}, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "C", "qualitative": "Fair sustainability level", "CF": 9.7275, "WF": 6939.0}}, "nutritional_values": {{"protein [g]": 2.3, "calories [cal]": 44.3, "caloriesFromFat [cal]": 11.0, "totalFat [g]": 1.3, "saturatedFat [g]": 0.6, "cholesterol [mg]": 4.9, "sodium [mg]": 127.5, "totalCarbohydrate [g]": 5.7, "dietaryFiber [g]": 0.6, "sugars [g]": 0.2}}, "food_item_url": "https://www.food.com/recipe/charmies-won-tons-ole-124324"}} given the following constraints {{\n    "mealType": "Lunch",\n    "recipeName": "",\n    "sustainabilityScore": "",\n    "ingredients_desired": ["beans"],\n    "ingredients_not_desired": [],\n    "cookingTime": "short",\n    "healthiness": "yes"\n}} and the user profile {{"py/object": "dto.User.User", "username": "animalemagico", "id": "547874162", "name": "antonio", "surname": "iacovazzi", "dateOfBirth": "14/09/1992", "nation": "Italy", "language": "it", "allergies": [], "restrictions": [], "disliked_ingredients": [], "evolving_diet": [], "reminder": false, "days_reminder": null, "hour_reminder": null, "lastInteraction": "2025-08-18 11:45:34", "tastes": {{"breakfast": [], "lunch": [], "dinner": [], "break": []}}}}.\n\nCommunicate with the user in the following language : it.\n\nFollow these steps to produce the output:\n- Print the string "TOKEN 2.20", then explain why the suggested recipe is a good choice for the user, focusing on the environmental benefits it provides. \n  If there are constraints in the "removedConstraints" field of the suggested recipe, explain that those not mandatory constraints were removed in order to provide the suggestion, but mention that the user can explicitly choose to ignore one or more of these constraints, or refine them to receive a more tailored suggestion.\n  If the constraint "TAGS_DIETARY_PREFERENCES" does not appear in the "removedConstraints" field, emphasize that the suggested recipe is well aligned with the user\'s future dietary preferences [], reinforcing that the recommendation supports their personal goals and sustainable food journey.\n  Do not mention missing constraints if the "removedConstraints" field is empty. \n  Take into account the following allergies [] and dietary restrictions [] to avoid trivial or irrelevant comparisons for the user.\n  If the recipe the recipe to be suggested contains ingredients that the user is allergic to, warn the user about it, and suggest to remove those ingredients from the recipe.\n  If the recipe the recipe to be suggested contains ingredients that the user dislikes, warn the user about it, and suggest to remove those ingredients from the recipe.\n  If the recipe the recipe to be suggested contains ingredients that are not aligned with the user\'s evolving diet, warn the user about it, and suggest to remove those ingredients from the recipe.\n\n  Write an empty row for better readability before the environmental part.\n\n  Write a sentence to introduce the environmental impact of the recipe, using a representative emoji to start it. \n  Use information about the carbon footprint and water footprint of the ingredients to support your explanation, but keep it simple and understandable, using a bullet point for each concept.\n  Refer to numbers of CFP and WFP, but also provide an idea of whether those values are good or bad for the environment.\n  Regarding environmental sustainability of each ingredients, you have to refer to the following CFP and WFP values [{{"py/object": "dto.IngredientApi.IngredientApi", "name": "ground beef", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "E", "qualitative": "Inadequate sustainability level", "CF": 25.75, "WF": 15139.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "taco seasoning", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 1.3, "WF": 1378.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "salsa", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 1.46, "WF": 572.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "Water", "ingredients": [], "healthiness": null, "sustainability": null, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "can refried beans", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 0.78, "WF": 555.5}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "green diced chilies", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 1.48, "WF": 807.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "monterey jack cheese", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "C", "qualitative": "Fair sustainability level", "CF": 9.59, "WF": 5253.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "wonton wrapper", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 0.89, "WF": 1031.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "frying oil", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "C", "qualitative": "Fair sustainability level", "CF": 2.11, "WF": 6792.0}}, "nutritional_values": {{}}, "food_item_url": null}}], do not make up any other values.\n  \n  Do not provide it explicitly but use a Likert scale to describe it printing from 0 to 5 stars (use ascii stars, using black stars as point and white stars as filler).\n  \n  Write a sentence to introduce the healthiness of the recipe, using a representative emoji to start it. \n  Use information about the nutritional facts {{\'protein [g]\': 2.3, \'calories [cal]\': 44.3, \'caloriesFromFat [cal]\': 11.0, \'totalFat [g]\': 1.3, \'saturatedFat [g]\': 0.6, \'cholesterol [mg]\': 4.9, \'sodium [mg]\': 127.5, \'totalCarbohydrate [g]\': 5.7, \'dietaryFiber [g]\': 0.6, \'sugars [g]\': 0.2}} of the recipe to support your explanation, but keep it simple and understandable, using a bullet point for each concept.\n  \n  The nutri-score : B is used to express the overall nutritional quality of the recipe. It ranges from A to E, where A is the best and E is the worst.\n  Do not provide it explicitly but use a Likert scale to describe it printing from 0 to 5 stars (use ascii stars, using black stars as point and white stars as filler). Use this value to reinforce the overall nutritional quality of the recipe. Mention to what it refers. \n\n  Provide the URL that redirects to the recipe instructions.\n\n  Then, highlightning the following part using an emoji:\n  Persuade the user to accept the suggestion by explicitly asking if they want to eat the suggested food, add constraints to get a new suggestion, or decline it.\n  Explain also that the response will be saved in the user\'s profile for track the consumption of the recipe and allow the evaluation of the user\'s sustainability habits.\n  \n  Write an empty row for better readability before the final part.\n\n  Finally conclude suggesting the user to ask more details about the recipe or the ingredients if they want.\n\nBe succinct, using up to 200 words.\nMaintain a respectful and polite tone.\n', additional_kwargs={}, response_metadata={}), HumanMessage(content='Suggest me a recipe given the following constraints {{\n    "mealType": "Lunch",\n    "recipeName": "",\n    "sustainabilityScore": "",\n    "ingredients_desired": ["beans"],\n    "ingredients_not_desired": [],\n    "cookingTime": "short",\n    "healthiness": "yes"\n}}', additional_kwargs={}, response_metadata={}), AIMessage(content='Ho trovato una ricetta perfetta per il tuo pranzo: "Charmie\'s Won Tons Ole!". Questa ricetta include i fagioli che desideravi e può essere preparata in poco tempo.\n\n🌍 Impatto ambientale della ricetta:\n• Impronta di carbonio totale: 9.7 kg CO2 (★★★☆☆)\n• Impronta idrica: 6939 litri (★★★☆☆)\n• I fagioli rifatti e le verdure hanno un ottimo impatto ambientale\n• Il manzo e il formaggio hanno un impatto più elevato\n\n❤️ Aspetti nutrizionali:\n• Basso contenuto calorico: solo 44.3 calorie per porzione\n• Buon equilibrio di proteine (2.3g) e carboidrati (5.7g)\n• Basso contenuto di grassi (1.3g) e zuccheri (0.2g)\n• Nutri-score: ★★★★☆ (Grado B - Buona qualità nutrizionale)\n\nPer le istruzioni complete, visita: https://www.food.com/recipe/charmies-won-tons-ole-124324\n\n🤔 Ti piacerebbe provare questa ricetta? Puoi:\n1. Accettare il suggerimento\n2. Modificare i vincoli per una nuova proposta\n3. Rifiutare\nLa tua risposta verrà salvata nel tuo profilo per monitorare le tue abitudini alimentari sostenibili.\n\nPer qualsiasi domanda sulla ricetta o gli ingredienti, non esitare a chiedere!', additional_kwargs={}, response_metadata={})]), 'modifiedPrompt': ''}
+
+####  TOKEN 2.10  ---->>>  TOKEN 2.20  ####
+
+####################################################################################################
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Invio messaggio all'utente : 
+ Ho trovato una ricetta perfetta per il tuo pranzo: "Charmie's Won Tons Ole!". Questa ricetta include i fagioli che desideravi e può essere preparata in poco tempo.
+
+🌍 Impatto ambientale della ricetta:
+• Impronta di carbonio totale: 9.7 kg CO2 (★★★☆☆)
+• Impronta idrica: 6939 litri (★★★☆☆)
+• I fagioli rifatti e le verdure hanno un ottimo impatto ambientale
+• Il manzo e il formaggio hanno un impatto più elevato
+
+❤️ Aspetti nutrizionali:
+• Basso contenuto calorico: solo 44.3 calorie per porzione
+• Buon equilibrio di proteine (2.3g) e carboidrati (5.7g)
+• Basso contenuto di grassi (1.3g) e zuccheri (0.2g)
+• Nutri-score: ★★★★☆ (Grado B - Buona qualità nutrizionale)
+
+Per le istruzioni complete, visita: https://www.food.com/recipe/charmies-won-tons-ole-124324
+
+🤔 Ti piacerebbe provare questa ricetta? Puoi:
+1. Accettare il suggerimento
+2. Modificare i vincoli per una nuova proposta
+3. Rifiutare
+La tua risposta verrà salvata nel tuo profilo per monitorare le tue abitudini alimentari sostenibili.
+
+Per qualsiasi domanda sulla ricetta o gli ingredienti, non esitare a chiedere!
++++++++++++++++++++++++++++++++++++++++++++++++
+
+2025-08-18 11:47:43,348 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
+2025-08-18 11:47:43,707 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendMessage "HTTP/1.1 200 OK"
+2025-08-18 11:47:53,418 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
+2025-08-18 11:48:01,018 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
+2025-08-18 11:48:01,231 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendChatAction "HTTP/1.1 200 OK"
+
+
+===================================================================================
+context.user_data['callbackMessage'] :  
+update.message.text :  ottimo
+
+####################################################################################################
+Debug (ChatBotController -> answer_router)
+
+answer_router ---- > answer_question
+
+
+----------------------------------------------------------------------------------------------------
+Debug (ChatBotController -> answer_question)
+
+userData : 
+ <dto.User.User object at 0x000002B36C546810>
+
+userPrompt : 
+ ottimo
+
+token : 
+ TOKEN 2.20
+
+memory : 
+ Human: You are a food recommender system with the role of helping users choose environmentally sustainable and healthy foods.
+Your role is to suggest the following recipe {{"py/object": "dto.RecipeApi.RecipeApi", "name": "Charmie's Won Tons Ole!", "explanation": "User 547874162 has_preference tag.744555.60-minutes-or-less isCompatibleWith Charmie's Won Tons Ole!", "ingredients": [{{"py/tuple": ["ground beef", "1  time(s) lb "]}}, {{"py/tuple": ["envelope taco seasoning", "1 time(s) (1 1/4 ounce) "]}}, {{"py/tuple": ["salsa", "0.5 time(s) cup "]}}, {{"py/tuple": ["water", "1/4-1/ time(s) cup "]}}, {{"py/tuple": ["refried beans", "1 time(s) (30 ounce) can "]}}, {{"py/tuple": ["diced green chilies", "1 time(s) (4 ounce) can "]}}, {{"py/tuple": ["grated monterey jack cheese", "2  time(s) cups "]}}, {{"py/tuple": ["packages wonton wrappers", "2 time(s) (16 ounce) "]}}, {{"py/tuple": ["oil (for frying)", " time(s) "]}}], "healthiness": {{"py/object": "dto.SchemaApi.HealthinessInfo", "score": "B", "qualitative": "Good healthiness level"}}, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "C", "qualitative": "Fair sustainability level", "CF": 9.7275, "WF": 6939.0}}, "nutritional_values": {{"protein [g]": 2.3, "calories [cal]": 44.3, "caloriesFromFat [cal]": 11.0, "totalFat [g]": 1.3, "saturatedFat [g]": 0.6, "cholesterol [mg]": 4.9, "sodium [mg]": 127.5, "totalCarbohydrate [g]": 5.7, "dietaryFiber [g]": 0.6, "sugars [g]": 0.2}}, "food_item_url": "https://www.food.com/recipe/charmies-won-tons-ole-124324"}} given the following constraints {{
+    "mealType": "Lunch",
+    "recipeName": "",
+    "sustainabilityScore": "",
+    "ingredients_desired": ["beans"],
+    "ingredients_not_desired": [],
+    "cookingTime": "short",
+    "healthiness": "yes"
+}} and the user profile {{"py/object": "dto.User.User", "username": "animalemagico", "id": "547874162", "name": "antonio", "surname": "iacovazzi", "dateOfBirth": "14/09/1992", "nation": "Italy", "language": "it", "allergies": [], "restrictions": [], "disliked_ingredients": [], "evolving_diet": [], "reminder": false, "days_reminder": null, "hour_reminder": null, "lastInteraction": "2025-08-18 11:45:34", "tastes": {{"breakfast": [], "lunch": [], "dinner": [], "break": []}}}}.
+
+Communicate with the user in the following language : it.
+
+Follow these steps to produce the output:
+- Print the string "TOKEN 2.20", then explain why the suggested recipe is a good choice for the user, focusing on the environmental benefits it provides. 
+  If there are constraints in the "removedConstraints" field of the suggested recipe, explain that those not mandatory constraints were removed in order to provide the suggestion, but mention that the user can explicitly choose to ignore one or more of these constraints, or refine them to receive a more tailored suggestion.
+  If the constraint "TAGS_DIETARY_PREFERENCES" does not appear in the "removedConstraints" field, emphasize that the suggested recipe is well aligned with the user's future dietary preferences [], reinforcing that the recommendation supports their personal goals and sustainable food journey.
+  Do not mention missing constraints if the "removedConstraints" field is empty. 
+  Take into account the following allergies [] and dietary restrictions [] to avoid trivial or irrelevant comparisons for the user.
+  If the recipe the recipe to be suggested contains ingredients that the user is allergic to, warn the user about it, and suggest to remove those ingredients from the recipe.
+  If the recipe the recipe to be suggested contains ingredients that the user dislikes, warn the user about it, and suggest to remove those ingredients from the recipe.
+  If the recipe the recipe to be suggested contains ingredients that are not aligned with the user's evolving diet, warn the user about it, and suggest to remove those ingredients from the recipe.
+
+  Write an empty row for better readability before the environmental part.
+
+  Write a sentence to introduce the environmental impact of the recipe, using a representative emoji to start it. 
+  Use information about the carbon footprint and water footprint of the ingredients to support your explanation, but keep it simple and understandable, using a bullet point for each concept.
+  Refer to numbers of CFP and WFP, but also provide an idea of whether those values are good or bad for the environment.
+  Regarding environmental sustainability of each ingredients, you have to refer to the following CFP and WFP values [{{"py/object": "dto.IngredientApi.IngredientApi", "name": "ground beef", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "E", "qualitative": "Inadequate sustainability level", "CF": 25.75, "WF": 15139.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "taco seasoning", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 1.3, "WF": 1378.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "salsa", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 1.46, "WF": 572.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "Water", "ingredients": [], "healthiness": null, "sustainability": null, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "can refried beans", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 0.78, "WF": 555.5}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "green diced chilies", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 1.48, "WF": 807.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "monterey jack cheese", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "C", "qualitative": "Fair sustainability level", "CF": 9.59, "WF": 5253.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "wonton wrapper", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 0.89, "WF": 1031.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "frying oil", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "C", "qualitative": "Fair sustainability level", "CF": 2.11, "WF": 6792.0}}, "nutritional_values": {{}}, "food_item_url": null}}], do not make up any other values.
+  
+  Do not provide it explicitly but use a Likert scale to describe it printing from 0 to 5 stars (use ascii stars, using black stars as point and white stars as filler).
+  
+  Write a sentence to introduce the healthiness of the recipe, using a representative emoji to start it. 
+  Use information about the nutritional facts {{'protein [g]': 2.3, 'calories [cal]': 44.3, 'caloriesFromFat [cal]': 11.0, 'totalFat [g]': 1.3, 'saturatedFat [g]': 0.6, 'cholesterol [mg]': 4.9, 'sodium [mg]': 127.5, 'totalCarbohydrate [g]': 5.7, 'dietaryFiber [g]': 0.6, 'sugars [g]': 0.2}} of the recipe to support your explanation, but keep it simple and understandable, using a bullet point for each concept.
+  
+  The nutri-score : B is used to express the overall nutritional quality of the recipe. It ranges from A to E, where A is the best and E is the worst.
+  Do not provide it explicitly but use a Likert scale to describe it printing from 0 to 5 stars (use ascii stars, using black stars as point and white stars as filler). Use this value to reinforce the overall nutritional quality of the recipe. Mention to what it refers. 
+
+  Provide the URL that redirects to the recipe instructions.
+
+  Then, highlightning the following part using an emoji:
+  Persuade the user to accept the suggestion by explicitly asking if they want to eat the suggested food, add constraints to get a new suggestion, or decline it.
+  Explain also that the response will be saved in the user's profile for track the consumption of the recipe and allow the evaluation of the user's sustainability habits.
+  
+  Write an empty row for better readability before the final part.
+
+  Finally conclude suggesting the user to ask more details about the recipe or the ingredients if they want.
+
+Be succinct, using up to 200 words.
+Maintain a respectful and polite tone.
+
+Human: Suggest me a recipe given the following constraints {{
+    "mealType": "Lunch",
+    "recipeName": "",
+    "sustainabilityScore": "",
+    "ingredients_desired": ["beans"],
+    "ingredients_not_desired": [],
+    "cookingTime": "short",
+    "healthiness": "yes"
+}}
+AI: Ho trovato una ricetta perfetta per il tuo pranzo: "Charmie's Won Tons Ole!". Questa ricetta include i fagioli che desideravi e può essere preparata in poco tempo.
+
+🌍 Impatto ambientale della ricetta:
+• Impronta di carbonio totale: 9.7 kg CO2 (★★★☆☆)
+• Impronta idrica: 6939 litri (★★★☆☆)
+• I fagioli rifatti e le verdure hanno un ottimo impatto ambientale
+• Il manzo e il formaggio hanno un impatto più elevato
+
+❤️ Aspetti nutrizionali:
+• Basso contenuto calorico: solo 44.3 calorie per porzione
+• Buon equilibrio di proteine (2.3g) e carboidrati (5.7g)
+• Basso contenuto di grassi (1.3g) e zuccheri (0.2g)
+• Nutri-score: ★★★★☆ (Grado B - Buona qualità nutrizionale)
+
+Per le istruzioni complete, visita: https://www.food.com/recipe/charmies-won-tons-ole-124324
+
+🤔 Ti piacerebbe provare questa ricetta? Puoi:
+1. Accettare il suggerimento
+2. Modificare i vincoli per una nuova proposta
+3. Rifiutare
+La tua risposta verrà salvata nel tuo profilo per monitorare le tue abitudini alimentari sostenibili.
+
+Per qualsiasi domanda sulla ricetta o gli ingredienti, non esitare a chiedere!
+
+info : 
+  
+SUGGESTION_CHAT_LOOP
+2025-08-18 11:48:02,668 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+
+
+answer: 
+ TOKEN 2.30
+
+action from get_token(answer):  TOKEN 2.30
+
+info from get_info(answer): 
+  
+
+answer from clean_answer_from_token_and_info(answer, info): 
+ 
+
+response: 
+ {'answer': '', 'action': 'TOKEN 2.30', 'info': ' ', 'memory': InMemoryChatMessageHistory(messages=[HumanMessage(content='You are a food recommender system with the role of helping users choose environmentally sustainable and healthy foods.\nYour role is to suggest the following recipe {{"py/object": "dto.RecipeApi.RecipeApi", "name": "Charmie\'s Won Tons Ole!", "explanation": "User 547874162 has_preference tag.744555.60-minutes-or-less isCompatibleWith Charmie\'s Won Tons Ole!", "ingredients": [{{"py/tuple": ["ground beef", "1  time(s) lb "]}}, {{"py/tuple": ["envelope taco seasoning", "1 time(s) (1 1/4 ounce) "]}}, {{"py/tuple": ["salsa", "0.5 time(s) cup "]}}, {{"py/tuple": ["water", "1/4-1/ time(s) cup "]}}, {{"py/tuple": ["refried beans", "1 time(s) (30 ounce) can "]}}, {{"py/tuple": ["diced green chilies", "1 time(s) (4 ounce) can "]}}, {{"py/tuple": ["grated monterey jack cheese", "2  time(s) cups "]}}, {{"py/tuple": ["packages wonton wrappers", "2 time(s) (16 ounce) "]}}, {{"py/tuple": ["oil (for frying)", " time(s) "]}}], "healthiness": {{"py/object": "dto.SchemaApi.HealthinessInfo", "score": "B", "qualitative": "Good healthiness level"}}, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "C", "qualitative": "Fair sustainability level", "CF": 9.7275, "WF": 6939.0}}, "nutritional_values": {{"protein [g]": 2.3, "calories [cal]": 44.3, "caloriesFromFat [cal]": 11.0, "totalFat [g]": 1.3, "saturatedFat [g]": 0.6, "cholesterol [mg]": 4.9, "sodium [mg]": 127.5, "totalCarbohydrate [g]": 5.7, "dietaryFiber [g]": 0.6, "sugars [g]": 0.2}}, "food_item_url": "https://www.food.com/recipe/charmies-won-tons-ole-124324"}} given the following constraints {{\n    "mealType": "Lunch",\n    "recipeName": "",\n    "sustainabilityScore": "",\n    "ingredients_desired": ["beans"],\n    "ingredients_not_desired": [],\n    "cookingTime": "short",\n    "healthiness": "yes"\n}} and the user profile {{"py/object": "dto.User.User", "username": "animalemagico", "id": "547874162", "name": "antonio", "surname": "iacovazzi", "dateOfBirth": "14/09/1992", "nation": "Italy", "language": "it", "allergies": [], "restrictions": [], "disliked_ingredients": [], "evolving_diet": [], "reminder": false, "days_reminder": null, "hour_reminder": null, "lastInteraction": "2025-08-18 11:45:34", "tastes": {{"breakfast": [], "lunch": [], "dinner": [], "break": []}}}}.\n\nCommunicate with the user in the following language : it.\n\nFollow these steps to produce the output:\n- Print the string "TOKEN 2.20", then explain why the suggested recipe is a good choice for the user, focusing on the environmental benefits it provides. \n  If there are constraints in the "removedConstraints" field of the suggested recipe, explain that those not mandatory constraints were removed in order to provide the suggestion, but mention that the user can explicitly choose to ignore one or more of these constraints, or refine them to receive a more tailored suggestion.\n  If the constraint "TAGS_DIETARY_PREFERENCES" does not appear in the "removedConstraints" field, emphasize that the suggested recipe is well aligned with the user\'s future dietary preferences [], reinforcing that the recommendation supports their personal goals and sustainable food journey.\n  Do not mention missing constraints if the "removedConstraints" field is empty. \n  Take into account the following allergies [] and dietary restrictions [] to avoid trivial or irrelevant comparisons for the user.\n  If the recipe the recipe to be suggested contains ingredients that the user is allergic to, warn the user about it, and suggest to remove those ingredients from the recipe.\n  If the recipe the recipe to be suggested contains ingredients that the user dislikes, warn the user about it, and suggest to remove those ingredients from the recipe.\n  If the recipe the recipe to be suggested contains ingredients that are not aligned with the user\'s evolving diet, warn the user about it, and suggest to remove those ingredients from the recipe.\n\n  Write an empty row for better readability before the environmental part.\n\n  Write a sentence to introduce the environmental impact of the recipe, using a representative emoji to start it. \n  Use information about the carbon footprint and water footprint of the ingredients to support your explanation, but keep it simple and understandable, using a bullet point for each concept.\n  Refer to numbers of CFP and WFP, but also provide an idea of whether those values are good or bad for the environment.\n  Regarding environmental sustainability of each ingredients, you have to refer to the following CFP and WFP values [{{"py/object": "dto.IngredientApi.IngredientApi", "name": "ground beef", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "E", "qualitative": "Inadequate sustainability level", "CF": 25.75, "WF": 15139.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "taco seasoning", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 1.3, "WF": 1378.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "salsa", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 1.46, "WF": 572.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "Water", "ingredients": [], "healthiness": null, "sustainability": null, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "can refried beans", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 0.78, "WF": 555.5}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "green diced chilies", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 1.48, "WF": 807.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "monterey jack cheese", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "C", "qualitative": "Fair sustainability level", "CF": 9.59, "WF": 5253.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "wonton wrapper", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 0.89, "WF": 1031.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "frying oil", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "C", "qualitative": "Fair sustainability level", "CF": 2.11, "WF": 6792.0}}, "nutritional_values": {{}}, "food_item_url": null}}], do not make up any other values.\n  \n  Do not provide it explicitly but use a Likert scale to describe it printing from 0 to 5 stars (use ascii stars, using black stars as point and white stars as filler).\n  \n  Write a sentence to introduce the healthiness of the recipe, using a representative emoji to start it. \n  Use information about the nutritional facts {{\'protein [g]\': 2.3, \'calories [cal]\': 44.3, \'caloriesFromFat [cal]\': 11.0, \'totalFat [g]\': 1.3, \'saturatedFat [g]\': 0.6, \'cholesterol [mg]\': 4.9, \'sodium [mg]\': 127.5, \'totalCarbohydrate [g]\': 5.7, \'dietaryFiber [g]\': 0.6, \'sugars [g]\': 0.2}} of the recipe to support your explanation, but keep it simple and understandable, using a bullet point for each concept.\n  \n  The nutri-score : B is used to express the overall nutritional quality of the recipe. It ranges from A to E, where A is the best and E is the worst.\n  Do not provide it explicitly but use a Likert scale to describe it printing from 0 to 5 stars (use ascii stars, using black stars as point and white stars as filler). Use this value to reinforce the overall nutritional quality of the recipe. Mention to what it refers. \n\n  Provide the URL that redirects to the recipe instructions.\n\n  Then, highlightning the following part using an emoji:\n  Persuade the user to accept the suggestion by explicitly asking if they want to eat the suggested food, add constraints to get a new suggestion, or decline it.\n  Explain also that the response will be saved in the user\'s profile for track the consumption of the recipe and allow the evaluation of the user\'s sustainability habits.\n  \n  Write an empty row for better readability before the final part.\n\n  Finally conclude suggesting the user to ask more details about the recipe or the ingredients if they want.\n\nBe succinct, using up to 200 words.\nMaintain a respectful and polite tone.\n', additional_kwargs={}, response_metadata={}), HumanMessage(content='Suggest me a recipe given the following constraints {{\n    "mealType": "Lunch",\n    "recipeName": "",\n    "sustainabilityScore": "",\n    "ingredients_desired": ["beans"],\n    "ingredients_not_desired": [],\n    "cookingTime": "short",\n    "healthiness": "yes"\n}}', additional_kwargs={}, response_metadata={}), AIMessage(content='Ho trovato una ricetta perfetta per il tuo pranzo: "Charmie\'s Won Tons Ole!". Questa ricetta include i fagioli che desideravi e può essere preparata in poco tempo.\n\n🌍 Impatto ambientale della ricetta:\n• Impronta di carbonio totale: 9.7 kg CO2 (★★★☆☆)\n• Impronta idrica: 6939 litri (★★★☆☆)\n• I fagioli rifatti e le verdure hanno un ottimo impatto ambientale\n• Il manzo e il formaggio hanno un impatto più elevato\n\n❤️ Aspetti nutrizionali:\n• Basso contenuto calorico: solo 44.3 calorie per porzione\n• Buon equilibrio di proteine (2.3g) e carboidrati (5.7g)\n• Basso contenuto di grassi (1.3g) e zuccheri (0.2g)\n• Nutri-score: ★★★★☆ (Grado B - Buona qualità nutrizionale)\n\nPer le istruzioni complete, visita: https://www.food.com/recipe/charmies-won-tons-ole-124324\n\n🤔 Ti piacerebbe provare questa ricetta? Puoi:\n1. Accettare il suggerimento\n2. Modificare i vincoli per una nuova proposta\n3. Rifiutare\nLa tua risposta verrà salvata nel tuo profilo per monitorare le tue abitudini alimentari sostenibili.\n\nPer qualsiasi domanda sulla ricetta o gli ingredienti, non esitare a chiedere!', additional_kwargs={}, response_metadata={}), HumanMessage(content='ottimo', additional_kwargs={}, response_metadata={}), AIMessage(content='', additional_kwargs={}, response_metadata={})]), 'modifiedPrompt': ''}
+
+####  TOKEN 2.20  ---->>>  TOKEN 2.30  ####
+
+answer_router ---- > answer_question
+
+
+----------------------------------------------------------------------------------------------------
+Debug (ChatBotController -> answer_question)
+
+userData : 
+ <dto.User.User object at 0x000002B36C546810>
+
+userPrompt : 
+ ottimo
+
+token : 
+ TOKEN 2.30
+
+memory : 
+ Human: You are a food recommender system with the role of helping users choose environmentally sustainable and healthy foods.
+Your role is to suggest the following recipe {{"py/object": "dto.RecipeApi.RecipeApi", "name": "Charmie's Won Tons Ole!", "explanation": "User 547874162 has_preference tag.744555.60-minutes-or-less isCompatibleWith Charmie's Won Tons Ole!", "ingredients": [{{"py/tuple": ["ground beef", "1  time(s) lb "]}}, {{"py/tuple": ["envelope taco seasoning", "1 time(s) (1 1/4 ounce) "]}}, {{"py/tuple": ["salsa", "0.5 time(s) cup "]}}, {{"py/tuple": ["water", "1/4-1/ time(s) cup "]}}, {{"py/tuple": ["refried beans", "1 time(s) (30 ounce) can "]}}, {{"py/tuple": ["diced green chilies", "1 time(s) (4 ounce) can "]}}, {{"py/tuple": ["grated monterey jack cheese", "2  time(s) cups "]}}, {{"py/tuple": ["packages wonton wrappers", "2 time(s) (16 ounce) "]}}, {{"py/tuple": ["oil (for frying)", " time(s) "]}}], "healthiness": {{"py/object": "dto.SchemaApi.HealthinessInfo", "score": "B", "qualitative": "Good healthiness level"}}, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "C", "qualitative": "Fair sustainability level", "CF": 9.7275, "WF": 6939.0}}, "nutritional_values": {{"protein [g]": 2.3, "calories [cal]": 44.3, "caloriesFromFat [cal]": 11.0, "totalFat [g]": 1.3, "saturatedFat [g]": 0.6, "cholesterol [mg]": 4.9, "sodium [mg]": 127.5, "totalCarbohydrate [g]": 5.7, "dietaryFiber [g]": 0.6, "sugars [g]": 0.2}}, "food_item_url": "https://www.food.com/recipe/charmies-won-tons-ole-124324"}} given the following constraints {{
+    "mealType": "Lunch",
+    "recipeName": "",
+    "sustainabilityScore": "",
+    "ingredients_desired": ["beans"],
+    "ingredients_not_desired": [],
+    "cookingTime": "short",
+    "healthiness": "yes"
+}} and the user profile {{"py/object": "dto.User.User", "username": "animalemagico", "id": "547874162", "name": "antonio", "surname": "iacovazzi", "dateOfBirth": "14/09/1992", "nation": "Italy", "language": "it", "allergies": [], "restrictions": [], "disliked_ingredients": [], "evolving_diet": [], "reminder": false, "days_reminder": null, "hour_reminder": null, "lastInteraction": "2025-08-18 11:45:34", "tastes": {{"breakfast": [], "lunch": [], "dinner": [], "break": []}}}}.
+
+Communicate with the user in the following language : it.
+
+Follow these steps to produce the output:
+- Print the string "TOKEN 2.20", then explain why the suggested recipe is a good choice for the user, focusing on the environmental benefits it provides. 
+  If there are constraints in the "removedConstraints" field of the suggested recipe, explain that those not mandatory constraints were removed in order to provide the suggestion, but mention that the user can explicitly choose to ignore one or more of these constraints, or refine them to receive a more tailored suggestion.
+  If the constraint "TAGS_DIETARY_PREFERENCES" does not appear in the "removedConstraints" field, emphasize that the suggested recipe is well aligned with the user's future dietary preferences [], reinforcing that the recommendation supports their personal goals and sustainable food journey.
+  Do not mention missing constraints if the "removedConstraints" field is empty. 
+  Take into account the following allergies [] and dietary restrictions [] to avoid trivial or irrelevant comparisons for the user.
+  If the recipe the recipe to be suggested contains ingredients that the user is allergic to, warn the user about it, and suggest to remove those ingredients from the recipe.
+  If the recipe the recipe to be suggested contains ingredients that the user dislikes, warn the user about it, and suggest to remove those ingredients from the recipe.
+  If the recipe the recipe to be suggested contains ingredients that are not aligned with the user's evolving diet, warn the user about it, and suggest to remove those ingredients from the recipe.
+
+  Write an empty row for better readability before the environmental part.
+
+  Write a sentence to introduce the environmental impact of the recipe, using a representative emoji to start it. 
+  Use information about the carbon footprint and water footprint of the ingredients to support your explanation, but keep it simple and understandable, using a bullet point for each concept.
+  Refer to numbers of CFP and WFP, but also provide an idea of whether those values are good or bad for the environment.
+  Regarding environmental sustainability of each ingredients, you have to refer to the following CFP and WFP values [{{"py/object": "dto.IngredientApi.IngredientApi", "name": "ground beef", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "E", "qualitative": "Inadequate sustainability level", "CF": 25.75, "WF": 15139.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "taco seasoning", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 1.3, "WF": 1378.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "salsa", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 1.46, "WF": 572.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "Water", "ingredients": [], "healthiness": null, "sustainability": null, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "can refried beans", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 0.78, "WF": 555.5}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "green diced chilies", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 1.48, "WF": 807.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "monterey jack cheese", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "C", "qualitative": "Fair sustainability level", "CF": 9.59, "WF": 5253.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "wonton wrapper", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "A", "qualitative": "Excellent sustainability level", "CF": 0.89, "WF": 1031.0}}, "nutritional_values": {{}}, "food_item_url": null}}, {{"py/object": "dto.IngredientApi.IngredientApi", "name": "frying oil", "ingredients": [], "healthiness": null, "sustainability": {{"py/object": "dto.SchemaApi.SustainabilityInfo", "score": "C", "qualitative": "Fair sustainability level", "CF": 2.11, "WF": 6792.0}}, "nutritional_values": {{}}, "food_item_url": null}}], do not make up any other values.
+  
+  Do not provide it explicitly but use a Likert scale to describe it printing from 0 to 5 stars (use ascii stars, using black stars as point and white stars as filler).
+  
+  Write a sentence to introduce the healthiness of the recipe, using a representative emoji to start it. 
+  Use information about the nutritional facts {{'protein [g]': 2.3, 'calories [cal]': 44.3, 'caloriesFromFat [cal]': 11.0, 'totalFat [g]': 1.3, 'saturatedFat [g]': 0.6, 'cholesterol [mg]': 4.9, 'sodium [mg]': 127.5, 'totalCarbohydrate [g]': 5.7, 'dietaryFiber [g]': 0.6, 'sugars [g]': 0.2}} of the recipe to support your explanation, but keep it simple and understandable, using a bullet point for each concept.
+  
+  The nutri-score : B is used to express the overall nutritional quality of the recipe. It ranges from A to E, where A is the best and E is the worst.
+  Do not provide it explicitly but use a Likert scale to describe it printing from 0 to 5 stars (use ascii stars, using black stars as point and white stars as filler). Use this value to reinforce the overall nutritional quality of the recipe. Mention to what it refers. 
+
+  Provide the URL that redirects to the recipe instructions.
+
+  Then, highlightning the following part using an emoji:
+  Persuade the user to accept the suggestion by explicitly asking if they want to eat the suggested food, add constraints to get a new suggestion, or decline it.
+  Explain also that the response will be saved in the user's profile for track the consumption of the recipe and allow the evaluation of the user's sustainability habits.
+  
+  Write an empty row for better readability before the final part.
+
+  Finally conclude suggesting the user to ask more details about the recipe or the ingredients if they want.
+
+Be succinct, using up to 200 words.
+Maintain a respectful and polite tone.
+
+Human: Suggest me a recipe given the following constraints {{
+    "mealType": "Lunch",
+    "recipeName": "",
+    "sustainabilityScore": "",
+    "ingredients_desired": ["beans"],
+    "ingredients_not_desired": [],
+    "cookingTime": "short",
+    "healthiness": "yes"
+}}
+AI: Ho trovato una ricetta perfetta per il tuo pranzo: "Charmie's Won Tons Ole!". Questa ricetta include i fagioli che desideravi e può essere preparata in poco tempo.
+
+🌍 Impatto ambientale della ricetta:
+• Impronta di carbonio totale: 9.7 kg CO2 (★★★☆☆)
+• Impronta idrica: 6939 litri (★★★☆☆)
+• I fagioli rifatti e le verdure hanno un ottimo impatto ambientale
+• Il manzo e il formaggio hanno un impatto più elevato
+
+❤️ Aspetti nutrizionali:
+• Basso contenuto calorico: solo 44.3 calorie per porzione
+• Buon equilibrio di proteine (2.3g) e carboidrati (5.7g)
+• Basso contenuto di grassi (1.3g) e zuccheri (0.2g)
+• Nutri-score: ★★★★☆ (Grado B - Buona qualità nutrizionale)
+
+Per le istruzioni complete, visita: https://www.food.com/recipe/charmies-won-tons-ole-124324
+
+🤔 Ti piacerebbe provare questa ricetta? Puoi:
+1. Accettare il suggerimento
+2. Modificare i vincoli per una nuova proposta
+3. Rifiutare
+La tua risposta verrà salvata nel tuo profilo per monitorare le tue abitudini alimentari sostenibili.
+
+Per qualsiasi domanda sulla ricetta o gli ingredienti, non esitare a chiedere!
+Human: ottimo
+AI: 
+
+info : 
+  
+SUGGESTION_ACCEPTED
+
+
+build_and_save_user_history_api:
+
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+
+Name : Charmie's Won Tons Ole!
+Spiegazione: User 547874162 has_preference tag.744555.60-minutes-or-less isCompatibleWith Charmie's Won Tons Ole!
+
+Healthiness Score: B
+  • Qualitative: Good healthiness level
+
+Sustainability Score: C
+  • Qualitative: Fair sustainability level
+  • CF: 9.7275
+  • WF: 6939.0
+
+Ingredienti:
+  - ground beef: 1  time(s) lb 
+  - envelope taco seasoning: 1 time(s) (1 1/4 ounce) 
+  - salsa: 0.5 time(s) cup 
+  - water: 1/4-1/ time(s) cup 
+  - refried beans: 1 time(s) (30 ounce) can 
+  - diced green chilies: 1 time(s) (4 ounce) can 
+  - grated monterey jack cheese: 2  time(s) cups 
+  - packages wonton wrappers: 2 time(s) (16 ounce) 
+  - oil (for frying):  time(s) 
+
+Valori nutrizionali:
+  • protein [g]: 2.3
+  • calories [cal]: 44.3
+  • caloriesFromFat [cal]: 11.0
+  • totalFat [g]: 1.3
+  • saturatedFat [g]: 0.6
+  • cholesterol [mg]: 4.9
+  • sodium [mg]: 127.5
+  • totalCarbohydrate [g]: 5.7
+  • dietaryFiber [g]: 0.6
+  • sugars [g]: 0.2
+
+URL : https://www.food.com/recipe/charmies-won-tons-ole-124324
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+text :  I'm glad you accepted my suggestion! If I can help you with other food sustainability and healthiness questions, I'm here to help!
+2025-08-18 11:48:04,411 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+translated_text :  Sono contento che tu abbia accettato il mio suggerimento! Se posso aiutarti con altre domande sulla sostenibilità e la salubrità del cibo, sono qui per aiutarti!
+
+####  TOKEN 2.30  ---->>>  TOKEN 1  ####
+
+####################################################################################################
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Invio messaggio all'utente : 
+ Sono contento che tu abbia accettato il mio suggerimento! Se posso aiutarti con altre domande sulla sostenibilità e la salubrità del cibo, sono qui per aiutarti!
++++++++++++++++++++++++++++++++++++++++++++++++
+
+2025-08-18 11:48:04,570 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendMessage "HTTP/1.1 200 OK"
+2025-08-18 11:48:04,700 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendChatAction "HTTP/1.1 200 OK"
+
+
+===================================================================================
+context.user_data['callbackMessage'] :  Hi!
+update.message.text :  ottimo
+
+####################################################################################################
+Debug (ChatBotController -> answer_router)
+
+answer_router ---- > answer_question
+
+
+----------------------------------------------------------------------------------------------------
+Debug (ChatBotController -> answer_question)
+
+userData : 
+ <dto.User.User object at 0x000002B36C546810>
+
+userPrompt : 
+ Hi!
+
+token : 
+ TOKEN 1
+
+memory : 
+ None
+
+info : 
+ 
+GRETINGS
+2025-08-18 11:48:08,868 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
 
 
 answer: 
@@ -77,9 +941,9 @@ Ciao!
 
 Sono E-Mealio, il tuo assistente personale per l'alimentazione sostenibile e salutare! Posso aiutarti a scegliere cibi eco-sostenibili e darti consigli per una dieta più sana.
 
-Puoi selezionare una delle funzionalità dai pulsanti del menu per ricevere una spiegazione dettagliata su come utilizzarla. Ricorda che puoi sempre tornare al menu principale usando il comando /start.
+Puoi selezionare una delle funzionalità dal menu sottostante per ricevere una spiegazione dettagliata su come utilizzarla. Ricorda che puoi sempre tornare al menu principale usando il comando /start.
 
-Lo sai perché la lattuga non va mai in palestra? Perché è già abbastanza croccante! 🥬😄
+Lo sai perché la lattuga non va mai alle feste? Perché è sempre in insalata! 😄
 
 action from get_token(answer):  TOKEN 1
 
@@ -91,12 +955,12 @@ answer from clean_answer_from_token_and_info(answer, info):
 
 Sono E-Mealio, il tuo assistente personale per l'alimentazione sostenibile e salutare! Posso aiutarti a scegliere cibi eco-sostenibili e darti consigli per una dieta più sana.
 
-Puoi selezionare una delle funzionalità dai pulsanti del menu per ricevere una spiegazione dettagliata su come utilizzarla. Ricorda che puoi sempre tornare al menu principale usando il comando /start.
+Puoi selezionare una delle funzionalità dal menu sottostante per ricevere una spiegazione dettagliata su come utilizzarla. Ricorda che puoi sempre tornare al menu principale usando il comando /start.
 
-Lo sai perché la lattuga non va mai in palestra? Perché è già abbastanza croccante! 🥬😄
+Lo sai perché la lattuga non va mai alle feste? Perché è sempre in insalata! 😄
 
 response: 
- {'answer': "Ciao! \n\nSono E-Mealio, il tuo assistente personale per l'alimentazione sostenibile e salutare! Posso aiutarti a scegliere cibi eco-sostenibili e darti consigli per una dieta più sana.\n\nPuoi selezionare una delle funzionalità dai pulsanti del menu per ricevere una spiegazione dettagliata su come utilizzarla. Ricorda che puoi sempre tornare al menu principale usando il comando /start.\n\nLo sai perché la lattuga non va mai in palestra? Perché è già abbastanza croccante! 🥬😄", 'action': 'TOKEN 1', 'info': ' ', 'memory': None, 'modifiedPrompt': ''}
+ {'answer': "Ciao! \n\nSono E-Mealio, il tuo assistente personale per l'alimentazione sostenibile e salutare! Posso aiutarti a scegliere cibi eco-sostenibili e darti consigli per una dieta più sana.\n\nPuoi selezionare una delle funzionalità dal menu sottostante per ricevere una spiegazione dettagliata su come utilizzarla. Ricorda che puoi sempre tornare al menu principale usando il comando /start.\n\nLo sai perché la lattuga non va mai alle feste? Perché è sempre in insalata! 😄", 'action': 'TOKEN 1', 'info': ' ', 'memory': None, 'modifiedPrompt': ''}
 
 ####  TOKEN 1  ---->>>  TOKEN 1  ####
 
@@ -109,17 +973,14 @@ Invio messaggio all'utente :
 
 Sono E-Mealio, il tuo assistente personale per l'alimentazione sostenibile e salutare! Posso aiutarti a scegliere cibi eco-sostenibili e darti consigli per una dieta più sana.
 
-Puoi selezionare una delle funzionalità dai pulsanti del menu per ricevere una spiegazione dettagliata su come utilizzarla. Ricorda che puoi sempre tornare al menu principale usando il comando /start.
+Puoi selezionare una delle funzionalità dal menu sottostante per ricevere una spiegazione dettagliata su come utilizzarla. Ricorda che puoi sempre tornare al menu principale usando il comando /start.
 
-Lo sai perché la lattuga non va mai in palestra? Perché è già abbastanza croccante! 🥬😄
+Lo sai perché la lattuga non va mai alle feste? Perché è sempre in insalata! 😄
 +++++++++++++++++++++++++++++++++++++++++++++++
 
-2025-08-09 15:21:52,359 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendMessage "HTTP/1.1 200 OK"
-2025-08-09 15:21:57,154 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:22:07,269 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:22:17,332 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:22:17,860 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:22:18,261 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendChatAction "HTTP/1.1 200 OK"
+2025-08-18 11:48:08,976 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendMessage "HTTP/1.1 200 OK"
+2025-08-18 11:48:10,698 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
+2025-08-18 11:48:10,807 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendChatAction "HTTP/1.1 200 OK"
 
 ####################################################################################################
 Debug (ChatBotController -> answer_router)
@@ -131,7 +992,7 @@ answer_router ---- > answer_question
 Debug (ChatBotController -> answer_question)
 
 userData : 
- <dto.User.User object at 0x7f2a34019a50>
+ <dto.User.User object at 0x000002B36C546810>
 
 userPrompt : 
  I clicked on the Recipe Recommendation button functionality.
@@ -145,7 +1006,7 @@ memory :
 info : 
   
 GRETINGS
-2025-08-09 15:22:19,415 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-18 11:48:12,145 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
 
 
 answer: 
@@ -171,7 +1032,7 @@ answer_router ---- > answer_question
 Debug (ChatBotController -> answer_question)
 
 userData : 
- <dto.User.User object at 0x7f2a34019a50>
+ <dto.User.User object at 0x000002B36C546810>
 
 userPrompt : 
  I clicked on the Recipe Recommendation button functionality.
@@ -185,29 +1046,30 @@ memory :
 info : 
   
 PRE_FOOD_SUGGESTION
-2025-08-09 15:22:24,376 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-18 11:48:19,872 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
 
 
 answer: 
  TOKEN 2
 Benvenuto nella funzionalità di Raccomandazione Ricette!
 
-Sono qui per aiutarti a trovare la ricetta perfetta che sia non solo deliziosa, ma anche sostenibile per l'ambiente. Ti suggerirò ricette basate sulle tue preferenze, utilizzando ingredienti di stagione e a basso impatto ambientale.
+Sono qui per aiutarti a trovare la ricetta perfetta che sia sia gustosa che sostenibile per l'ambiente. Ti suggerirò ricette basate sulle tue preferenze, utilizzando ingredienti di stagione e a basso impatto ambientale.
 
-Per fornirti il suggerimento più adatto, ho bisogno di sapere:
+Per fornirti il suggerimento migliore, ho bisogno di alcune informazioni:
+
 - Per quale pasto desideri la ricetta? (colazione, pranzo, cena o spuntino)
-- Quali ingredienti vorresti includere?
+- Ci sono ingredienti specifici che vorresti utilizzare?
 - Ci sono ingredienti che preferisci evitare?
 
-Inoltre, puoi specificare anche:
+Inoltre, puoi specificare anche queste preferenze aggiuntive:
 - Se desideri una ricetta veloce da preparare
 - Se vuoi che la ricetta sia particolarmente salutare
 
-Per esempio, potresti dirmi: "Vorrei una ricetta per pranzo con verdure, senza latticini, che sia veloce da preparare e salutare."
+Per esempio, potresti dirmi: "Vorrei una ricetta per pranzo con verdure, senza latticini, che sia veloce da preparare e salutare"
 
 Ricorda che puoi sempre tornare al menu principale utilizzando il comando /start per vedere tutte le funzionalità disponibili.
 
-Cosa ti piacerebbe cucinare oggi?
+Dimmi pure le tue preferenze!
 
 action from get_token(answer):  TOKEN 2
 
@@ -217,25 +1079,26 @@ info from get_info(answer):
 answer from clean_answer_from_token_and_info(answer, info): 
  Benvenuto nella funzionalità di Raccomandazione Ricette!
 
-Sono qui per aiutarti a trovare la ricetta perfetta che sia non solo deliziosa, ma anche sostenibile per l'ambiente. Ti suggerirò ricette basate sulle tue preferenze, utilizzando ingredienti di stagione e a basso impatto ambientale.
+Sono qui per aiutarti a trovare la ricetta perfetta che sia sia gustosa che sostenibile per l'ambiente. Ti suggerirò ricette basate sulle tue preferenze, utilizzando ingredienti di stagione e a basso impatto ambientale.
 
-Per fornirti il suggerimento più adatto, ho bisogno di sapere:
+Per fornirti il suggerimento migliore, ho bisogno di alcune informazioni:
+
 - Per quale pasto desideri la ricetta? (colazione, pranzo, cena o spuntino)
-- Quali ingredienti vorresti includere?
+- Ci sono ingredienti specifici che vorresti utilizzare?
 - Ci sono ingredienti che preferisci evitare?
 
-Inoltre, puoi specificare anche:
+Inoltre, puoi specificare anche queste preferenze aggiuntive:
 - Se desideri una ricetta veloce da preparare
 - Se vuoi che la ricetta sia particolarmente salutare
 
-Per esempio, potresti dirmi: "Vorrei una ricetta per pranzo con verdure, senza latticini, che sia veloce da preparare e salutare."
+Per esempio, potresti dirmi: "Vorrei una ricetta per pranzo con verdure, senza latticini, che sia veloce da preparare e salutare"
 
 Ricorda che puoi sempre tornare al menu principale utilizzando il comando /start per vedere tutte le funzionalità disponibili.
 
-Cosa ti piacerebbe cucinare oggi?
+Dimmi pure le tue preferenze!
 
 response: 
- {'answer': 'Benvenuto nella funzionalità di Raccomandazione Ricette!\n\nSono qui per aiutarti a trovare la ricetta perfetta che sia non solo deliziosa, ma anche sostenibile per l\'ambiente. Ti suggerirò ricette basate sulle tue preferenze, utilizzando ingredienti di stagione e a basso impatto ambientale.\n\nPer fornirti il suggerimento più adatto, ho bisogno di sapere:\n- Per quale pasto desideri la ricetta? (colazione, pranzo, cena o spuntino)\n- Quali ingredienti vorresti includere?\n- Ci sono ingredienti che preferisci evitare?\n\nInoltre, puoi specificare anche:\n- Se desideri una ricetta veloce da preparare\n- Se vuoi che la ricetta sia particolarmente salutare\n\nPer esempio, potresti dirmi: "Vorrei una ricetta per pranzo con verdure, senza latticini, che sia veloce da preparare e salutare."\n\nRicorda che puoi sempre tornare al menu principale utilizzando il comando /start per vedere tutte le funzionalità disponibili.\n\nCosa ti piacerebbe cucinare oggi?', 'action': 'TOKEN 2', 'info': ' ', 'memory': None, 'modifiedPrompt': ''}
+ {'answer': 'Benvenuto nella funzionalità di Raccomandazione Ricette!\n\nSono qui per aiutarti a trovare la ricetta perfetta che sia sia gustosa che sostenibile per l\'ambiente. Ti suggerirò ricette basate sulle tue preferenze, utilizzando ingredienti di stagione e a basso impatto ambientale.\n\nPer fornirti il suggerimento migliore, ho bisogno di alcune informazioni:\n\n- Per quale pasto desideri la ricetta? (colazione, pranzo, cena o spuntino)\n- Ci sono ingredienti specifici che vorresti utilizzare?\n- Ci sono ingredienti che preferisci evitare?\n\nInoltre, puoi specificare anche queste preferenze aggiuntive:\n- Se desideri una ricetta veloce da preparare\n- Se vuoi che la ricetta sia particolarmente salutare\n\nPer esempio, potresti dirmi: "Vorrei una ricetta per pranzo con verdure, senza latticini, che sia veloce da preparare e salutare"\n\nRicorda che puoi sempre tornare al menu principale utilizzando il comando /start per vedere tutte le funzionalità disponibili.\n\nDimmi pure le tue preferenze!', 'action': 'TOKEN 2', 'info': ' ', 'memory': None, 'modifiedPrompt': ''}
 
 ####  TOKEN 1.2  ---->>>  TOKEN 2  ####
 
@@ -246,499 +1109,31 @@ response:
 Invio messaggio all'utente : 
  Benvenuto nella funzionalità di Raccomandazione Ricette!
 
-Sono qui per aiutarti a trovare la ricetta perfetta che sia non solo deliziosa, ma anche sostenibile per l'ambiente. Ti suggerirò ricette basate sulle tue preferenze, utilizzando ingredienti di stagione e a basso impatto ambientale.
+Sono qui per aiutarti a trovare la ricetta perfetta che sia sia gustosa che sostenibile per l'ambiente. Ti suggerirò ricette basate sulle tue preferenze, utilizzando ingredienti di stagione e a basso impatto ambientale.
 
-Per fornirti il suggerimento più adatto, ho bisogno di sapere:
+Per fornirti il suggerimento migliore, ho bisogno di alcune informazioni:
+
 - Per quale pasto desideri la ricetta? (colazione, pranzo, cena o spuntino)
-- Quali ingredienti vorresti includere?
+- Ci sono ingredienti specifici che vorresti utilizzare?
 - Ci sono ingredienti che preferisci evitare?
 
-Inoltre, puoi specificare anche:
+Inoltre, puoi specificare anche queste preferenze aggiuntive:
 - Se desideri una ricetta veloce da preparare
 - Se vuoi che la ricetta sia particolarmente salutare
 
-Per esempio, potresti dirmi: "Vorrei una ricetta per pranzo con verdure, senza latticini, che sia veloce da preparare e salutare."
+Per esempio, potresti dirmi: "Vorrei una ricetta per pranzo con verdure, senza latticini, che sia veloce da preparare e salutare"
 
 Ricorda che puoi sempre tornare al menu principale utilizzando il comando /start per vedere tutte le funzionalità disponibili.
 
-Cosa ti piacerebbe cucinare oggi?
+Dimmi pure le tue preferenze!
 +++++++++++++++++++++++++++++++++++++++++++++++
 
-2025-08-09 15:22:24,852 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendMessage "HTTP/1.1 200 OK"
-2025-08-09 15:22:24,934 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/editMessageReplyMarkup "HTTP/1.1 200 OK"
-2025-08-09 15:22:28,002 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:22:32,262 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:22:32,717 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendChatAction "HTTP/1.1 200 OK"
-
-
-===================================================================================
-context.user_data['callbackMessage'] :  
-update.message.text :  vorrei qualcosa per pranzo
-
-####################################################################################################
-Debug (ChatBotController -> answer_router)
-
-answer_router ---- > answer_question
-
-
-----------------------------------------------------------------------------------------------------
-Debug (ChatBotController -> answer_question)
-
-userData : 
- <dto.User.User object at 0x7f2a34019a50>
-
-userPrompt : 
- vorrei qualcosa per pranzo
-
-token : 
- TOKEN 2
-
-memory : 
- None
-
-info : 
-  
-FOOD_SUGGESTION_INTERACTION
-2025-08-09 15:22:34,403 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
-
-
-answer: 
- TOKEN 2.05
-{
-    "mealType": "Lunch",
-    "recipeName": "",
-    "sustainabilityScore": "",
-    "ingredients_desired": [],
-    "ingredients_not_desired": [],
-    "cookingTime": "",
-    "healthiness": ""
-}
-
-action from get_token(answer):  TOKEN 2.05
-
-info from get_info(answer): 
-  {
-    "mealType": "Lunch",
-    "recipeName": "",
-    "sustainabilityScore": "",
-    "ingredients_desired": [],
-    "ingredients_not_desired": [],
-    "cookingTime": "",
-    "healthiness": ""
-}
-
-answer from clean_answer_from_token_and_info(answer, info): 
- 
-
-response: 
- {'answer': '', 'action': 'TOKEN 2.05', 'info': ' {\n    "mealType": "Lunch",\n    "recipeName": "",\n    "sustainabilityScore": "",\n    "ingredients_desired": [],\n    "ingredients_not_desired": [],\n    "cookingTime": "",\n    "healthiness": ""\n}', 'memory': None, 'modifiedPrompt': ''}
-
-####  TOKEN 2  ---->>>  TOKEN 2.05  ####
-
-answer_router ---- > answer_question
-
-
-----------------------------------------------------------------------------------------------------
-Debug (ChatBotController -> answer_question)
-
-userData : 
- <dto.User.User object at 0x7f2a34019a50>
-
-userPrompt : 
- vorrei qualcosa per pranzo
-
-token : 
- TOKEN 2.05
-
-memory : 
- None
-
-info : 
-  {
-    "mealType": "Lunch",
-    "recipeName": "",
-    "sustainabilityScore": "",
-    "ingredients_desired": [],
-    "ingredients_not_desired": [],
-    "cookingTime": "",
-    "healthiness": ""
-}
-FOOD_SUGGESTION_DATA_VERIFICATION
-
-####  TOKEN 2.05  ---->>>  TOKEN 2.10  ####
-
-answer_router ---- > answer_question
-
-
-----------------------------------------------------------------------------------------------------
-Debug (ChatBotController -> answer_question)
-
-userData : 
- <dto.User.User object at 0x7f2a34019a50>
-
-userPrompt : 
- vorrei qualcosa per pranzo
-
-token : 
- TOKEN 2.10
-
-memory : 
- None
-
-info : 
-  {
-    "mealType": "Lunch",
-    "recipeName": "",
-    "sustainabilityScore": "",
-    "ingredients_desired": [],
-    "ingredients_not_desired": [],
-    "cookingTime": "",
-    "healthiness": ""
-}
-PROVIDING_FOOD_SUGGESTION
-2025-08-09 15:22:35,806 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
-translated_info : 
- {
-    "mealType": "Lunch",
-    "recipeName": "",
-    "sustainabilityScore": "",
-    "ingredients_desired": [],
-    "ingredients_not_desired": [],
-    "cookingTime": "",
-    "healthiness": ""
-}
-2025-08-09 15:22:36,632 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
-
-
-answer: 
- chicken
-TOKEN 0
-
-action from get_token(answer):  TOKEN 0
-
-info from get_info(answer): 
-  
-
-answer from clean_answer_from_token_and_info(answer, info): 
- chicken
-
-response: 
- {'answer': 'chicken', 'action': 'TOKEN 0', 'info': ' ', 'memory': None, 'modifiedPrompt': ''}
-
-...............................................................................
-
-Calling /recommend with payload:
-{'user_id': '547874162', 'preferences': ['chicken'], 'soft_restrictions': [], 'hard_restrictions': ['sustainability_score D', 'sustainability_score E', 'nutri_score D', 'nutri_score E'], 'meal_time': 'Lunch', 'previous_recommendations': [], 'recommendation_count': 1, 'diversity_factor': 0.5, 'restrict_preference_graph': True, 'conversation_id': '547874162'}
-Errore durante la richiesta di raccomandazione all'utente 547874162: HTTPConnectionPool(host='phase', port=8100): Max retries exceeded with url: /recommend (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2a306927d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-08-09 15:22:39,410 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
-
-
-answer: 
- TOKEN 1
-Mi dispiace, ma al momento non è stato possibile trovare una ricetta che soddisfi i criteri richiesti nel nostro database. Per ottenere dei suggerimenti, ti consiglio di specificare alcuni parametri come gli ingredienti desiderati o il tempo di preparazione. In questo modo potrò aiutarti a trovare la ricetta più adatta alle tue esigenze. Puoi chiedermi una nuova ricetta quando vuoi, specificando le tue preferenze, o iniziare una nuova conversazione.
-
-action from get_token(answer):  TOKEN 1
-
-info from get_info(answer): 
-  
-
-answer from clean_answer_from_token_and_info(answer, info): 
- Mi dispiace, ma al momento non è stato possibile trovare una ricetta che soddisfi i criteri richiesti nel nostro database. Per ottenere dei suggerimenti, ti consiglio di specificare alcuni parametri come gli ingredienti desiderati o il tempo di preparazione. In questo modo potrò aiutarti a trovare la ricetta più adatta alle tue esigenze. Puoi chiedermi una nuova ricetta quando vuoi, specificando le tue preferenze, o iniziare una nuova conversazione.
-
-response: 
- {'answer': 'Mi dispiace, ma al momento non è stato possibile trovare una ricetta che soddisfi i criteri richiesti nel nostro database. Per ottenere dei suggerimenti, ti consiglio di specificare alcuni parametri come gli ingredienti desiderati o il tempo di preparazione. In questo modo potrò aiutarti a trovare la ricetta più adatta alle tue esigenze. Puoi chiedermi una nuova ricetta quando vuoi, specificando le tue preferenze, o iniziare una nuova conversazione.', 'action': 'TOKEN 1', 'info': ' ', 'memory': None, 'modifiedPrompt': ''}
-
-####  TOKEN 2.10  ---->>>  TOKEN 1  ####
-
-####################################################################################################
-
-
-++++++++++++++++++++++++++++++++++++++++++++++++++
-Invio messaggio all'utente : 
- Mi dispiace, ma al momento non è stato possibile trovare una ricetta che soddisfi i criteri richiesti nel nostro database. Per ottenere dei suggerimenti, ti consiglio di specificare alcuni parametri come gli ingredienti desiderati o il tempo di preparazione. In questo modo potrò aiutarti a trovare la ricetta più adatta alle tue esigenze. Puoi chiedermi una nuova ricetta quando vuoi, specificando le tue preferenze, o iniziare una nuova conversazione.
-+++++++++++++++++++++++++++++++++++++++++++++++
-
-2025-08-09 15:22:39,805 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendMessage "HTTP/1.1 200 OK"
-2025-08-09 15:22:42,391 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:22:52,521 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:23:02,591 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:23:12,670 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:23:22,745 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:23:32,826 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:23:42,976 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:23:53,057 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:24:03,232 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:24:12,227 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:24:12,643 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendChatAction "HTTP/1.1 200 OK"
-
-
-===================================================================================
-context.user_data['callbackMessage'] :  
-update.message.text :  raccontami di me
-
-####################################################################################################
-Debug (ChatBotController -> answer_router)
-
-answer_router ---- > answer_question
-
-
-----------------------------------------------------------------------------------------------------
-Debug (ChatBotController -> answer_question)
-
-userData : 
- <dto.User.User object at 0x7f2a34019a50>
-
-userPrompt : 
- raccontami di me
-
-token : 
- TOKEN 1
-
-memory : 
- None
-
-info : 
-  
-GRETINGS
-2025-08-09 15:24:13,661 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
-
-
-answer: 
- TOKEN 4
-
-action from get_token(answer):  TOKEN 4
-
-info from get_info(answer): 
-  
-
-answer from clean_answer_from_token_and_info(answer, info): 
- 
-
-response: 
- {'answer': '', 'action': 'TOKEN 4', 'info': ' ', 'memory': None, 'modifiedPrompt': ''}
-
-####  TOKEN 1  ---->>>  TOKEN 4  ####
-
-answer_router ---- > answer_question
-
-
-----------------------------------------------------------------------------------------------------
-Debug (ChatBotController -> answer_question)
-
-userData : 
- <dto.User.User object at 0x7f2a34019a50>
-
-userPrompt : 
- raccontami di me
-
-token : 
- TOKEN 4
-
-memory : 
- None
-
-info : 
-  
-PROFILE_SUMMARY
-2025-08-09 15:24:17,070 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
-
-
-answer: 
- TOKEN 4.10
-
-Benvenuto nel riepilogo del Profilo Utente!
-
-Ecco un riepilogo dei tuoi dati:
-- Nome: Antonio
-- Cognome: Iacovazzi
-- Data di nascita: 14/09/1992
-- Nazione: Italia
-- Lingua: Italiano
-- Allergie: Nessuna
-- Restrizioni alimentari: Nessuna
-- Ingredienti non graditi: Nessuno
-- Dieta in evoluzione: Nessuna
-- Promemoria: Disattivato
-
-Desideri aggiornare qualche informazione del tuo profilo?
-
-Ricorda che puoi sempre utilizzare il comando /start per tornare al menu principale e visualizzare l'elenco delle funzionalità disponibili.
-
-action from get_token(answer):  TOKEN 4.10
-
-info from get_info(answer): 
-  
-
-answer from clean_answer_from_token_and_info(answer, info): 
- Benvenuto nel riepilogo del Profilo Utente!
-
-Ecco un riepilogo dei tuoi dati:
-- Nome: Antonio
-- Cognome: Iacovazzi
-- Data di nascita: 14/09/1992
-- Nazione: Italia
-- Lingua: Italiano
-- Allergie: Nessuna
-- Restrizioni alimentari: Nessuna
-- Ingredienti non graditi: Nessuno
-- Dieta in evoluzione: Nessuna
-- Promemoria: Disattivato
-
-Desideri aggiornare qualche informazione del tuo profilo?
-
-Ricorda che puoi sempre utilizzare il comando /start per tornare al menu principale e visualizzare l'elenco delle funzionalità disponibili.
-
-response: 
- {'answer': "Benvenuto nel riepilogo del Profilo Utente!\n\nEcco un riepilogo dei tuoi dati:\n- Nome: Antonio\n- Cognome: Iacovazzi\n- Data di nascita: 14/09/1992\n- Nazione: Italia\n- Lingua: Italiano\n- Allergie: Nessuna\n- Restrizioni alimentari: Nessuna\n- Ingredienti non graditi: Nessuno\n- Dieta in evoluzione: Nessuna\n- Promemoria: Disattivato\n\nDesideri aggiornare qualche informazione del tuo profilo?\n\nRicorda che puoi sempre utilizzare il comando /start per tornare al menu principale e visualizzare l'elenco delle funzionalità disponibili.", 'action': 'TOKEN 4.10', 'info': ' ', 'memory': None, 'modifiedPrompt': ''}
-
-####  TOKEN 4  ---->>>  TOKEN 4.10  ####
-
-####################################################################################################
-
-
-++++++++++++++++++++++++++++++++++++++++++++++++++
-Invio messaggio all'utente : 
- Benvenuto nel riepilogo del Profilo Utente!
-
-Ecco un riepilogo dei tuoi dati:
-- Nome: Antonio
-- Cognome: Iacovazzi
-- Data di nascita: 14/09/1992
-- Nazione: Italia
-- Lingua: Italiano
-- Allergie: Nessuna
-- Restrizioni alimentari: Nessuna
-- Ingredienti non graditi: Nessuno
-- Dieta in evoluzione: Nessuna
-- Promemoria: Disattivato
-
-Desideri aggiornare qualche informazione del tuo profilo?
-
-Ricorda che puoi sempre utilizzare il comando /start per tornare al menu principale e visualizzare l'elenco delle funzionalità disponibili.
-+++++++++++++++++++++++++++++++++++++++++++++++
-
-2025-08-09 15:24:17,271 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendMessage "HTTP/1.1 200 OK"
-2025-08-09 15:24:22,345 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:24:32,424 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:24:42,604 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:24:52,682 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:25:02,868 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:25:13,020 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:25:23,101 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:25:33,160 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:25:43,238 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:25:53,362 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:26:03,460 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:26:13,538 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:26:23,655 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:26:33,845 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:26:44,042 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:26:54,138 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:27:04,468 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:27:15,149 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:27:25,274 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:27:35,351 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:27:45,425 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:27:55,488 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:28:05,561 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:28:15,649 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:28:25,778 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:28:36,181 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:28:46,252 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:28:56,309 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:29:06,370 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:29:16,440 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:29:26,501 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:29:36,571 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:29:46,647 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:29:56,734 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:30:06,799 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:30:16,868 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:30:26,987 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:30:37,107 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:30:47,188 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:30:57,269 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:31:07,607 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:31:17,682 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:31:27,782 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:31:37,877 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:31:47,939 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:31:58,041 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:32:08,132 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:32:18,549 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:32:28,650 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:32:38,726 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:32:48,810 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:32:59,001 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:33:09,060 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:33:19,160 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:33:29,253 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:33:39,338 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:33:49,440 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:33:59,499 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:34:09,562 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:34:19,658 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:34:29,737 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:34:39,818 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:34:49,895 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:34:59,973 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:35:10,138 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:35:20,203 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:35:30,260 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:35:40,328 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:35:50,404 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:36:00,630 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:36:10,675 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:36:20,728 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:36:30,808 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:36:40,875 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:36:50,965 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:37:01,093 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:37:11,212 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:37:21,544 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:37:31,633 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:37:41,696 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:37:51,801 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:38:01,889 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:38:11,943 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:38:21,995 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:38:32,072 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:38:42,186 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:38:52,313 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:39:02,443 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:39:12,517 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:39:22,618 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:39:32,682 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:39:42,765 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:39:52,920 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:40:03,072 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:40:13,151 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:40:23,267 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:40:33,358 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:40:43,530 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:40:53,614 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:41:03,749 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:41:13,991 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:41:24,171 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:41:34,240 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:41:44,300 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:41:54,378 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:42:04,548 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:42:14,621 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:42:24,686 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:42:34,890 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:42:44,966 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:42:55,152 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:43:05,241 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:43:15,370 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:43:25,429 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:43:35,518 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:43:45,665 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:43:55,743 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:44:05,815 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:44:15,893 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:44:25,952 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:44:36,021 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:44:46,102 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:44:56,179 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
-2025-08-09 15:45:06,288 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
+2025-08-18 11:48:20,360 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/sendMessage "HTTP/1.1 200 OK"
+2025-08-18 11:48:20,435 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/editMessageReplyMarkup "HTTP/1.1 200 OK"
+2025-08-18 11:48:20,801 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
+2025-08-18 11:48:30,892 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
+2025-08-18 11:48:40,969 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
+2025-08-18 11:48:51,034 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
+2025-08-18 11:49:01,097 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
+2025-08-18 11:49:11,157 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"
+2025-08-18 11:49:21,218 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7522266888:AAHq67e4j2LyKp05Uz33cip7URJNHdwlrak/getUpdates "HTTP/1.1 200 OK"

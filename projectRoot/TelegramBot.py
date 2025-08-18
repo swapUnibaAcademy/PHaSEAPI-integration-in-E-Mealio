@@ -12,7 +12,6 @@ from functools import wraps
 import service.domain.FoodHistoryService as foodHistory
 from apscheduler.schedulers.background import BackgroundScheduler
 from datetime import datetime, timedelta
-import service.asyncr.ComputeMonthlyUserTasteService as cmu
 import asyncio
 import service.bot.LangChainService as lcs
 
@@ -296,10 +295,6 @@ def schedule_user_reminder(scheduler, bot, user):
         replace_existing=True
     )
 
-async def compute_monthly_user_taste():
-    """Calcola il profilo di gusto degli utenti per ogni tipologia di pasto alla fine del mese."""
-    cmu.compute_monthly_user_taste()
-
 @send_action(ChatAction.TYPING)
 async def callback(update: Update, context: CallbackContext) -> None:
     
@@ -361,9 +356,6 @@ def main() -> None:
     users = us.get_all_users_with_reminder()
     for user in users:
         schedule_user_reminder(scheduler, application.bot, user)
-
-    #compute the user's taste at the start of the month based on the previous month's data
-    scheduler.add_job(lambda: asyncio.run(compute_monthly_user_taste()), 'cron', day=1, hour=0, minute=0)
 
     scheduler.start()
 
