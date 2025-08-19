@@ -64,7 +64,7 @@ docker-compose up --build
 This will:
 
 - Start a MongoDB container
-- Automatically restore the precomputed database from `/mongo_dump`
+- Automatically initilize the database
 - Launch the Telegram bot
 
 ---
