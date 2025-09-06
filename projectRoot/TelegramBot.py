@@ -180,7 +180,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     if(context.user_data['userData'] == None):
 
         # creiamo un nuovo utente
-        context.user_data['userData'] = user.User(telegramUser['username'],telegramUser['id'],None,None,None,None,user_language,None,None,None,None,None,None,None,None,None)
+        context.user_data['userData'] = user.User(telegramUser['username'],telegramUser['id'],None,None,None,None,user_language,None,None,None,None,None,None,None,None,None,None)
         
         # l'utente ha inviato il comando /start ed è prima volta che interagisce con il chatbot,
         # per questo come messaggio da inviare al chatbot usiamo USER_FIRST_MEETING_PHRASE = "Hi! It's the first time we met."

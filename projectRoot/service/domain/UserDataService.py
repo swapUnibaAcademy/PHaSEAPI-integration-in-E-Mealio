@@ -21,7 +21,7 @@ def getUserData(userId):
         if(userDbData == None):
             return None
         userJson = jsonpickle.encode(userDbData)
-        userData = user.User(None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None)
+        userData = user.User(None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None)
         userData.from_json(userJson)
         return userData
     
@@ -224,5 +224,5 @@ def get_hour_reminder(userId):
     else:
         return userDbData['hour_reminder']
     
-
-
+def get_next_progressive_id():
+    return userDB.get_next_progressive_id()

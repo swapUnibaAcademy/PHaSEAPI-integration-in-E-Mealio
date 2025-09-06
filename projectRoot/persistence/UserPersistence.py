@@ -95,3 +95,33 @@ def get_all_users_with_reminder():
     """
     users = collection.find({"reminder": True})
     return users
+
+def get_next_progressive_id():
+    """
+    Conta i documenti nella collezione user e restituisce il prossimo ID progressivo.
+    
+    Args:
+        db: Database MongoDB
+        collection_name: Nome della collezione (default: "user")
+    
+    Returns:
+        int: Prossimo ID progressivo (0 se la collezione è vuota, 
+             altrimenti max(id_progressive_number) + 1)
+    """
+    
+    # Conta il numero di documenti nella collezione
+    document_count = collection.count_documents({})
+    
+    if document_count > 0:
+        # Trova il documento con il valore più alto di id_progressive_number
+        max_doc = collection.find().sort("id_progressive_number", -1).limit(1)
+        max_doc = list(max_doc)
+        
+        if max_doc and "id_progressive_number" in max_doc[0]:
+            return max_doc[0]["id_progressive_number"] + 1
+        else:
+            # Se non ci sono documenti con id_progressive_number, restituisce 0
+            return 0
+    else:
+        # Nessun documento nella collezione
+        return 0

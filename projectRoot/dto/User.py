@@ -4,7 +4,7 @@ class User:
 
     """Rappresenta un utente che interagisce con il sistema."""
 
-    def __init__(self, username, id, name, surname, dateOfBirth, nation, language, allergies, restrictions, disliked_ingredients, evolving_diet, reminder, days_reminder, hour_reminder, lastInteraction, tastes):
+    def __init__(self, username, id, name, surname, dateOfBirth, nation, language, allergies, restrictions, disliked_ingredients, evolving_diet, reminder, days_reminder, hour_reminder, lastInteraction, tastes, id_progressive_number):
         """
         Inizializza un oggetto istanza della classe User.
 
@@ -25,6 +25,7 @@ class User:
         - hour_reminder : ora in cui, passati i giorni di inattività, l'utente vuole ricevere il reminder
         - lastInteraction: Ultima volta che l'utente ha interagito con il sistema.
         - tastes: Dizione contenente i gusti dell'utente per ogni tipologia di pasto.
+        - id_progressive_number: id progressivo che permette all'utente di loggare la sua esperienza nel questionario
         """
         self.username = username
         self.id = str(id)
@@ -42,6 +43,7 @@ class User:
         self.hour_reminder = hour_reminder
         self.lastInteraction = lastInteraction
         self.tastes = tastes
+        self.id_progressive_number = id_progressive_number
 
     def from_json(self, jsonString):
         """
@@ -78,6 +80,8 @@ class User:
             self.tastes = json_obj['tastes']
 
         #those fields are loaded only when bulding a user object from the database
+        if('id_progressive_number' in json_obj):
+            self.id_progressive_number = json_obj['id_progressive_number']
         if('username' in json_obj):
             self.username = json_obj['username']
         if('id' in json_obj):

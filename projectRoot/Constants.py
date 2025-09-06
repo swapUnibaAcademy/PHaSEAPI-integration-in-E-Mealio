@@ -22,7 +22,9 @@ reminder: a boolean value that indicates whether the user allows receiving remin
 days_reminder : days of inactivity after the user wants to receive the reminder.
 hour_reminder : time of day, after the days of inactivity have passed, when the user wants to receive the reminder.
 disliked_ingredients: a list of ingredients that the user doesnt like.
-evolving_diet: a list of alimentary restrictions that the user could have in the future, to nudge him through recipe suggestions. The possible constraints are ["vegan", "vegetarian", "kosher"]."""
+evolving_diet: a list of alimentary restrictions that the user could have in the future, to nudge him through recipe suggestions. The possible constraints are ["vegan", "vegetarian", "kosher"].
+id_progressive_number: a id used to identify the user in the subsequently questionnaire phase
+"""
 
 
 USER_DATA_STRUCTURE_TEMPLATE_WITH_MANDATORINESS = """
@@ -171,6 +173,7 @@ Communicate with the user in the following language : {language}.
 
 Follow these steps to produce the output:
 - Print the string "TOKEN 0.4", then summarize what you have collected in a conversational form. Use only the fields from the JSON structure. Mention only the values explicitly provided by the user. Do not refer to the user's tastes, last interaction, or user id and user nickname.
+  Put emphasis on the id_progressive_number asking the user to taking note of it for the subsequent questionairre. Use and emoji to hghlight the importance of this piece of information.
   Finally ask for permission to send reminders about the bot's usage if the user forgets to use the system. Then specify to the user that the deault reminder is set by default after 2 days of inactivity and at 12 o' clock, but if he wants custom settings he can specify after how many days of inactivity he wants to receive the reminder and at what time of day.
 """
 
@@ -511,6 +514,7 @@ Communicate with the user in the following language : {language}.
 
 Follow these steps to produce the output:
 - Print the string "TOKEN 4.10",  welcome the user to the User Profile Recap and Update Functionality, then answer the user by generating a summary of the provided data, ignoring the information about tastes, last interaction and user id. Then ask if the user wants to update any information.
+  Put emphasis on the id_progressive_number asking the user to taking note of it for the subsequent questionairre. Use and emoji to hghlight the importance of this piece of information.
   Conclude adding a reminder about using the /start command to return to the main menu and view the list of available functionalities.
 
 Maintain a respectful and polite tone."""
@@ -581,7 +585,9 @@ The user will provide their profile in a JSON format.
 Communicate with the user in the following language : {language}.
 
 Follow these steps to produce the output:
-- Print the string "TOKEN 1", then summarize what you have collected in a conversational form,  ignoring the information about tastes, last interaction and user id."""
+- Print the string "TOKEN 1", then summarize what you have collected in a conversational form,  ignoring the information about tastes, last interaction and user id.
+  Put emphasis on the id_progressive_number asking the user to taking note of it for the subsequent questionairre. Use and emoji to hghlight the importance of this piece of information.
+"""
 
 #Food consumption history and evaluation (polished, tested and described)
 PRE_TASK_5_PROMPT = """You are a food recommender system named E-Mealio with the role of helping users choose environmentally sustainable and healthy foods.

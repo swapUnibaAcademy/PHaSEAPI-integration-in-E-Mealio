@@ -1582,17 +1582,17 @@ class Test8ControllerFoodHistory(unittest.TestCase):
 
 #Utility functions
 def get_user_data():
-    return ud.User("Test", 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+    return ud.User("Test", 0, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
 
 def get_valid_user_data():
-    return ud.User("Test", 0, "Giacomo", "Rossi", "01/01/1990", "Italy", "english",[], [],[], [], False, 2, 12, "", [])
+    return ud.User("Test", 0, "Giacomo", "Rossi", "01/01/1990", "Italy", "english",[], [],[], [], False, 2, 12, "", [], 0)
 
 def get_valid_user_data2():
-    return ud.User("Test", 0, "Giacomo", "Rossi", "01/01/1990", "Italy", "english", ["fish"], [],[], [], False, 2, 12, "", [])
+    return ud.User("Test", 0, "Giacomo", "Rossi", "01/01/1990", "Italy", "english", ["fish"], [],[], [], False, 2, 12, "", [], 0)
 
 
 def get_valid_user_data_with_impossible_constraints():
-    return ud.User("Test", 0, "Giacomo", "Rossi", "01/01/1990", "Italy", "english", [], ["halal"],[], [], False, 2, 12, "", [])
+    return ud.User("Test", 0, "Giacomo", "Rossi", "01/01/1990", "Italy", "english", [], ["halal"],[], [], False, 2, 12, "", [], 0)
 
 def print_answers(response, print_info = True):
     if print_info:

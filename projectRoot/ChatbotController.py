@@ -145,6 +145,7 @@ def answer_question(userData,userPrompt,token,memory,info):
     elif(token == p.TASK_0_3_HOOK):
         log.save_log("PERSISTING_USER_DATA", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
         #persist user data calling MongoDB...
+        userData.id_progressive_number = user.get_next_progressive_id()
         response = lcs.execute_chain(p.GET_DATA_PROMPT_BASE_0_3.format(language=language), "User data: " + userData.to_json(), 0.4, userData)
         userData.reminder = False
         user.save_user(userData)
