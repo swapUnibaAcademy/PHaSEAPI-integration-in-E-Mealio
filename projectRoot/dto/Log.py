@@ -4,7 +4,7 @@ class Log:
 
     """Rappresenta un log."""
 
-    def __init__(self, logContent, date, agent, userId):
+    def __init__(self, logContent, date, agent, userId, isScripted):
         """
         Inizializza un oggetto istanza della classe Log.
 
@@ -13,6 +13,7 @@ class Log:
         - date : Data in cui il log è stato generato.
         - agent : Agente che ha generato il log.
         - userId : Identificativo dell'utente associato al log.
+        - isScripted : Indica se l'utente ha interagito tramite script
 
         """
         if not isinstance(logContent, str):
@@ -22,6 +23,7 @@ class Log:
         self.date = date
         self.userId = userId
         self.agent = agent
+        self.isScripted = isScripted
     
 
     def from_json(self, jsonString):
@@ -39,6 +41,7 @@ class Log:
         self.date = json_obj.date
         self.agent = json_obj.agent
         self.userId = json_obj.userId
+        self.isScripted = json_obj.isScripted
         return self
     
     def to_json(self):

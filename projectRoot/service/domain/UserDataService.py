@@ -226,3 +226,17 @@ def get_hour_reminder(userId):
     
 def get_next_progressive_id():
     return userDB.get_next_progressive_id()
+
+def get_is_scripted_user(userId):
+    userDbData = userDB.get_user_by_user_id(str(userId))
+    if(userDbData == None):
+        return None
+    else:
+        name = userDbData['name']
+        surname = userDbData['surname']
+        dateOfBirth = userDbData['dateOfBirth']
+
+        if(name == 'Mario' and surname == 'Rossi' and dateOfBirth == '01/01/2000'):
+            return 1
+        else:
+            return 0

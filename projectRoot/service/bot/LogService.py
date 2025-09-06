@@ -1,6 +1,7 @@
 import dto.Log as log
 import jsonpickle
 import persistence.LogPersistence as logPersistence
+import service.domain.UserDataService as userDataService
 
 def save_log(logContent, date, agent, userId, printLog=False):
     """
@@ -15,6 +16,7 @@ def save_log(logContent, date, agent, userId, printLog=False):
     """
     if(printLog):
         print(logContent)
-    logObj = log.Log(logContent, date, agent, userId)
+    isScripted = userDataService.get_is_scripted_user(userId)
+    logObj = log.Log(logContent, date, agent, userId, isScripted)
     logJson= jsonpickle.encode(logObj)
     logPersistence.save_log(logJson)
