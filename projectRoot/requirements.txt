@@ -1,6 +1,6 @@
 APScheduler==3.11.0
 jsonpickle==4.0.1
-langchain==0.3.18
+langchain
 langchain_anthropic==0.3.7
 langchain_core==0.3.34
 langchain_openai==0.3.4
