@@ -51,7 +51,7 @@ if(MODEL == 'openai'):
     llm = ChatOpenAI(api_key=openai_api_key, model="gpt-4o-2024-08-06")
 if(MODEL == 'anthropic'):
     anthropic_api_key=os.getenv("ANTHROPIC_API_KEY")
-    llm = ChatAnthropic(model='claude-3-5-sonnet-20241022')
+    llm = ChatAnthropic(model='claude-3-7-sonnet-20250219')
 
 
 def get_prompt(input_prompt, memory):
