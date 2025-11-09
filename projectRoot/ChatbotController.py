@@ -544,10 +544,13 @@ def answer_question(userData,userPrompt,token,memory,info):
         
         type_item = item_data['task']
 
-        if type_item == 'ingredient':
-            ingredient_list = item_data['ingredients']
-        elif type_item == 'recipe':
-            ingredient_list = item_data['recipeNames']
+        if('ingredients' in item_data or 'recipeNames' in item_data):
+            if type_item == 'ingredient':
+                ingredient_list = item_data['ingredients']
+            elif type_item == 'recipe':
+                ingredient_list = item_data['recipeNames']
+        else:
+            ingredient_list = item_data['item']
 
         if isinstance(ingredient_list, str):
             ingredient_list = [ingredient_list]

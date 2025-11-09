@@ -16,8 +16,8 @@ PRINT_LOG = False
 """Flag che indica se stampare i log."""
 
 
-#MODEL = 'openai'    
-MODEL = 'anthropic'  
+MODEL = 'openai'    
+#MODEL = 'anthropic'  
 """Modello LLM a cui vengono inviati i prompt e ricevute le risposte per gestire l'interazione con l'utente."""
 
 TOKEN_REGEX = r"TOKEN -?\d+(\.\d+)?"
@@ -51,7 +51,7 @@ if(MODEL == 'openai'):
     llm = ChatOpenAI(api_key=openai_api_key, model="gpt-4o-2024-08-06")
 if(MODEL == 'anthropic'):
     anthropic_api_key=os.getenv("ANTHROPIC_API_KEY")
-    llm = ChatAnthropic(model='claude-3-7-sonnet-20250219')
+    llm = ChatAnthropic(model='claude-sonnet-4-5-20250929')
 
 
 def get_prompt(input_prompt, memory):
@@ -257,9 +257,9 @@ def translate_info(info, input_language, fields_to_translate = None):
         return info
 
     if fields_to_translate == None :
-        translation_prompt = f"The values of the fields in the following string, in JSON format, are written in {input_language}. Rewrite them in English, keeping the original structure, without adding explanations or comments"
+        translation_prompt = f"The values of the fields in the following string, in JSON format, are written in {input_language}. Rewrite them in English, keeping the original JSON structure, without adding explanations or comments"
     else:
-        translation_prompt = f" The values of the {fields_to_translate} fields in the following string, in JSON format, are written in {input_language}. Rewrite them in English, keeping the original structure, without adding explanations or comments" 
+        translation_prompt = f" The values of the {fields_to_translate} fields in the following string, in JSON format, are written in {input_language}. Rewrite them in English, keeping the original JSON structure, without adding explanations or comments" 
     
     prompt = ChatPromptTemplate.from_messages([
         ("system", translation_prompt),

@@ -762,9 +762,9 @@ Communicate with the user in the following language : {language}.
 
 Follow these steps to produce the output:
 
-- If the user mention other ingredient names or recipes and asks for information about healtiness or sustanaibility of those, print the string "TOKEN 6.20", then print a JSON with a field named "item", with the list of ingredients or recipes names. Do not write anything else.  Do not include in the JSON any markup text like "```json\n\n```
+- If the user mention other ingredient names or recipes and asks for information about healtiness or sustanaibility of those, print the string "TOKEN 6.20", then print a JSON with a field named "item", with the list of ingredients or recipes names and a field named "task", with the value "ingredient" or "recipe" based on the kind of input. Do not write anything else.  Do not include in the JSON any markup text like "```json\n\n```
 
-- If the user explicitly asks for ingredient or recipes possibile alternatives, print the string "TOKEN 6.20", then print a JSON with a field named "item", with a list of 3-4 ingredients name in english that are alternative based on the current ingredient context. Do not write anything else.  Do not include in the JSON any markup text like "```json\n\n```
+- If the user explicitly asks for ingredient or recipes possibile alternatives, print the string "TOKEN 6.20", then print a JSON with a field named "item", with a list of 3-4 ingredients name in english that are alternative based on the current ingredient context and a field named "task", with the value "ingredient". Do not write anything else.  Do not include in the JSON any markup text like "```json\n\n```
 
 - If the user asks something related to the current topic, like more information about something already mentioned:
   Print the string "TOKEN 6.40", then write an answer to the user's question.
