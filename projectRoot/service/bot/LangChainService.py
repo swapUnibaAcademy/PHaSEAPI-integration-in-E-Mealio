@@ -1,5 +1,5 @@
 import os
-import re
+import regex as re
 import dto.Response as resp
 from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
@@ -27,8 +27,18 @@ INFO_REGEX_ANGULAR = r"<(.*?)>"
 """Regex per estrarre informazioni, racchiuse da parentesi angolari <...>, da un testo."""
 
 
-INFO_REGEX_CURLY = r'\{[^{}]*\}(?:,\s*\{[^{}]*\})*'
-"""Regex per estrarre oggetti json, racchiuse da parentesi graffe {...}, da un testo. (limitata a 1 livello di nidificazione)"""
+#INFO_REGEX_CURLY = r'\{[^{}]*\}(?:,\s*\{[^{}]*\})*'
+#"""Regex per estrarre oggetti json, racchiuse da parentesi graffe {...}, da un testo. (limitata a 1 livello di nidificazione)"""
+
+INFO_REGEX_CURLY = re.compile(r"""
+\{
+    (?:                                 # contenuto interno
+        [^{}]                           # caratteri non graffe
+        |                               # oppure
+        (?R)                            # ricorsione: un’altra coppia {...}
+    )*
+\}
+""", re.VERBOSE)
 
 # Load environment variables from .env file
 
@@ -41,14 +51,15 @@ INFO_REGEX_CURLY = r'\{[^{}]*\}(?:,\s*\{[^{}]*\})*'
 # chatgpt-4o-latest
 # gpt-4o
 # o3-mini
-
+# gpt-5-2025-08-07
+# gpt-4.1-2025-04-14
 
 # claude-3-5-sonnet-20241022
 load_dotenv(find_dotenv())
 
 if(MODEL == 'openai'):
     openai_api_key = os.getenv("OPENAI_API_KEY")
-    llm = ChatOpenAI(api_key=openai_api_key, model="gpt-4o-2024-08-06")
+    llm = ChatOpenAI(api_key=openai_api_key, model="gpt-4.1-2025-04-14")
 if(MODEL == 'anthropic'):
     anthropic_api_key=os.getenv("ANTHROPIC_API_KEY")
     llm = ChatAnthropic(model='claude-sonnet-4-5-20250929')
@@ -167,6 +178,7 @@ def execute_chain(input_prompt, input_query, temperature, userData, memory = Non
     Returns:
     - Response: oggetto istanza della classe Response contenente la risposta generata, il token, le info estratte e lo stato della memoria.
     """
+    temperature = 1
     log.save_log(input_query, datetime.datetime.now(), "User", userData.id, PRINT_LOG)
     log.save_log(input_prompt, datetime.datetime.now(), "System: input_prompt", userData.id, PRINT_LOG)
     llm.temperature = temperature

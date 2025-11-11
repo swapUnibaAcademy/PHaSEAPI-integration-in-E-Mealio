@@ -575,7 +575,7 @@ def answer_question(userData,userPrompt,token,memory,info):
     elif(token == p.TASK_6_40_HOOK):
         log.save_log("SUSTAINABILITY_EXPERT_LOOP", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
 
-        response = lcs.execute_chain(p.TASK_6_40_PROMPT.format(language=language),userPrompt, 0.3, userData, memory, True)
+        response = lcs.execute_chain(p.TASK_6_40_PROMPT.format(language=language),userPrompt, 0.5, userData, memory, True)
         if response.action == p.TASK_MINUS_1_HOOK:
             response.modifiedPrompt = p.USER_GREETINGS_PHRASE
         return response

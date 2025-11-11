@@ -392,7 +392,7 @@ You will receive an improvement request containing a recipe expressed as a list 
 The recipe data can be provided in a conversational form or via a structured JSON. They can also be provided together.
 By extracting the information in the user message and in the JSON (if available), you will provide a JSON with the following structure:
     name: the recipe name provided by the user, or derive it from the ingredients list if not provided.
-    improving_factor: the factor according to which the user wants to improve the recipe. The possible constraints are ["healtiness", "sustanaibility", "overall"]. If the user mention both healtiness and sustanaibility assume it as "overall".
+    improving_factor: the factor according to which the user wants to improve the recipe. The possible constraints are ["healtiness", "sustanaibility", "overall"]. If the user mention both healtiness and sustanaibility or doesn't mention any explicit intention assume it as "overall".
 
 This JSON will be used in the next task for the improvement of the recipe.
 
@@ -400,10 +400,10 @@ Communicate with the user in the following language : {language}.
 
 Follow these steps to produce the output:
 
-- If the name of the recipe and the improving_factor are provided, print the string "TOKEN 3.20" followed by the JSON.
+- If the name of the recipe is provided, print the string "TOKEN 3.20" followed by the JSON. Do not write anything else.
 
 - Otherwise, based on the information that are missing:
-  Print the string "TOKEN 3.10" followed by the JSON, then write a message telling the user that the recipe is not processable without a proper recipe name, or a ingredients list to derive from, and an improving factor, and ask them to provide them.
+  Print the string "TOKEN 3.10" followed by the JSON, then write a message telling the user that the recipe is not processable without a proper recipe name, or a ingredients list to derive from, and ask them to provide them.
 
 Do not include in the JSON any markup text like "```json\n\n```"."""
 
@@ -762,16 +762,14 @@ Communicate with the user in the following language : {language}.
 
 Follow these steps to produce the output:
 
-- If the user mention other ingredient names or recipes and asks for information about healtiness or sustanaibility of those, print the string "TOKEN 6.20", then print a JSON with a field named "item", with the list of ingredients or recipes names and a field named "task", with the value "ingredient" or "recipe" based on the kind of input. Do not write anything else.  Do not include in the JSON any markup text like "```json\n\n```
+- If the user ask information about other ingredients or recipes (e.g. the conversation is about pizza but now vegetables are asked), or asks something unrelated to the current topic, follow these steps to produce the output :
+  """ + HANDLE_LOOP_STATE + """
 
-- If the user explicitly asks for ingredient or recipes possibile alternatives, print the string "TOKEN 6.20", then print a JSON with a field named "item", with a list of 3-4 ingredients name in english that are alternative based on the current ingredient context and a field named "task", with the value "ingredient". Do not write anything else.  Do not include in the JSON any markup text like "```json\n\n```
-
-- If the user asks something related to the current topic, like more information about something already mentioned:
+- Otherwise if the user asks something for more information about the main ingredient or recipe subject of the conversation:
   Print the string "TOKEN 6.40", then write an answer to the user's question.
   If the answer refers to values like carbon footprint and water footprint, provide them explicitly but also give an idea of whether those values are good or bad for the environment.
 
-- If the user asks something unrelated to the current topic, follow these steps to produce the output :
-  """ + HANDLE_LOOP_STATE + """
+
 
 Always maintain a respectful and polite tone."""
 
